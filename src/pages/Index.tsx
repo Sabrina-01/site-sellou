@@ -103,7 +103,13 @@ const Index = () => {
       {/* Header */}
       <header className="w-full bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold" style={{ color: '#008440' }}>Sellou</a>
+          <a href="#" className="flex items-center">
+            <img 
+              src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" 
+              alt="Sellou" 
+              className="h-8"
+            />
+          </a>
           <nav className="hidden md:flex items-center justify-center flex-1 mx-10">
             <a href="#inicio" className="mx-4 text-gray-700 hover:text-[#35DD48] transition-colors">Início</a>
             <a href="#servicos" className="mx-4 text-gray-700 hover:text-[#35DD48] transition-colors">Serviços</a>
@@ -301,85 +307,87 @@ const Index = () => {
             <p className="text-gray-600">Somos especialistas em potencializar resultados comerciais</p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Nossa Missão</h3>
-              <p className="text-gray-600 mb-6">
-                Na Sellou, nossa missão é transformar a maneira como as empresas vendem, oferecendo soluções inovadoras que combinam estratégia, tecnologia e capacitação para maximizar o potencial comercial de cada cliente.
-              </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-12">
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Nossa Missão</h3>
+                <p className="text-gray-600 mb-6">
+                  Na Sellou, nossa missão é transformar a maneira como as empresas vendem, oferecendo soluções inovadoras que combinam estratégia, tecnologia e capacitação para maximizar o potencial comercial de cada cliente.
+                </p>
+                
+                <h3 className="text-2xl font-bold mb-4">Nossa Visão</h3>
+                <p className="text-gray-600 mb-6">
+                  Ser reconhecida como a principal referência em soluções de vendas no Brasil, ajudando empresas de todos os portes a alcançarem resultados excepcionais e sustentáveis.
+                </p>
+              </div>
               
-              <h3 className="text-2xl font-bold mb-4">Nossa Visão</h3>
-              <p className="text-gray-600 mb-6">
-                Ser reconhecida como a principal referência em soluções de vendas no Brasil, ajudando empresas de todos os portes a alcançarem resultados excepcionais e sustentáveis.
-              </p>
-
-              <h3 className="text-2xl font-bold mb-4">Nossos Valores</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <strong className="text-gray-900">Excelência:</strong>
-                    <span className="text-gray-600"> Buscamos sempre a melhor performance em tudo que fazemos</span>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <strong className="text-gray-900">Inovação:</strong>
-                    <span className="text-gray-600"> Utilizamos as mais modernas tecnologias e metodologias</span>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <strong className="text-gray-900">Transparência:</strong>
-                    <span className="text-gray-600"> Mantemos relacionamentos claros e honestos com nossos clientes</span>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <strong className="text-gray-900">Resultados:</strong>
-                    <span className="text-gray-600"> Focamos em entregar resultados concretos e mensuráveis</span>
-                  </div>
-                </li>
-              </ul>
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Nossos Valores</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <strong className="text-gray-900">Excelência:</strong>
+                      <span className="text-gray-600"> Buscamos sempre a melhor performance em tudo que fazemos</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <strong className="text-gray-900">Inovação:</strong>
+                      <span className="text-gray-600"> Utilizamos as mais modernas tecnologias e metodologias</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <strong className="text-gray-900">Transparência:</strong>
+                      <span className="text-gray-600"> Mantemos relacionamentos claros e honestos com nossos clientes</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <strong className="text-gray-900">Resultados:</strong>
+                      <span className="text-gray-600"> Focamos em entregar resultados concretos e mensuráveis</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             
-            <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#008440] mb-2">5+</div>
-                  <p className="text-gray-600">Anos de Experiência</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#008440] mb-2">500+</div>
-                  <p className="text-gray-600">Clientes Atendidos</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#008440] mb-2">300%</div>
-                  <p className="text-gray-600">ROI Médio</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#008440] mb-2">95%</div>
-                  <p className="text-gray-600">Taxa de Satisfação</p>
-                </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+              <div className="text-center p-6 bg-green-50 rounded-lg">
+                <div className="text-3xl font-bold text-[#008440] mb-2">5+</div>
+                <p className="text-gray-600">Anos de Experiência</p>
+              </div>
+              <div className="text-center p-6 bg-green-50 rounded-lg">
+                <div className="text-3xl font-bold text-[#008440] mb-2">500+</div>
+                <p className="text-gray-600">Clientes Atendidos</p>
+              </div>
+              <div className="text-center p-6 bg-green-50 rounded-lg">
+                <div className="text-3xl font-bold text-[#008440] mb-2">300%</div>
+                <p className="text-gray-600">ROI Médio</p>
+              </div>
+              <div className="text-center p-6 bg-green-50 rounded-lg">
+                <div className="text-3xl font-bold text-[#008440] mb-2">95%</div>
+                <p className="text-gray-600">Taxa de Satisfação</p>
               </div>
             </div>
           </div>
@@ -395,77 +403,47 @@ const Index = () => {
             <p className="text-gray-600">Conheça os profissionais que fazem a diferença</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300">
-              <div className="w-24 h-24 bg-gradient-to-br from-[#35DD48] to-[#008440] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">AO</span>
+              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/8c91ba33-b728-43a4-aa16-79f4d1c1b75a.png" 
+                  alt="Anderson Medeiros" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-2">Anderson Oliveira</h3>
-              <p className="text-[#35DD48] font-medium mb-3">CEO & Fundador</p>
+              <h3 className="text-xl font-bold mb-2">Anderson Medeiros</h3>
               <p className="text-gray-600 text-sm mb-4">
-                Especialista em vendas com mais de 10 anos de experiência, formado em Administração e pós-graduado em Marketing Digital.
+                Executivo com 25+ anos de experiência em estratégia comercial, liderança de grandes times e expansão de receita. Especialista em planejamento, canais B2B/B2C e negociação com grandes contas.
               </p>
-              <div className="flex justify-center space-x-3">
-                <a href="https://www.linkedin.com/in/anderson-sellou" target="_blank" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
-                  </svg>
-                </a>
-                <a href="mailto:anderson@sellou.com.br" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-                  </svg>
-                </a>
-              </div>
+              <a 
+                href="https://www.linkedin.com/in/anderson-medeiros-929870153/" 
+                target="_blank" 
+                className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm transition-colors"
+              >
+                Ver perfil no LinkedIn
+              </a>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300">
-              <div className="w-24 h-24 bg-gradient-to-br from-[#35DD48] to-[#008440] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">JS</span>
+              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/059c4784-a98f-4e23-b03f-719c95bbabb7.png" 
+                  alt="Andersson S. Silva" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-2">Júlia Santos</h3>
-              <p className="text-[#35DD48] font-medium mb-3">Head de Estratégia</p>
+              <h3 className="text-xl font-bold mb-2">Andersson S. Silva</h3>
               <p className="text-gray-600 text-sm mb-4">
-                Especialista em estratégias comerciais e desenvolvimento de negócios, com foco em maximizar resultados de vendas.
+                Consultor com mais de 14 anos de atuação em estratégia, inovação e M&A. Conselheiro certificado, investidor e sócio de múltiplos negócios com forte atuação no ecossistema empresarial e educacional.
               </p>
-              <div className="flex justify-center space-x-3">
-                <a href="#" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
-                  </svg>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300">
-              <div className="w-24 h-24 bg-gradient-to-br from-[#35DD48] to-[#008440] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">RC</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">Roberto Costa</h3>
-              <p className="text-[#35DD48] font-medium mb-3">Especialista em Treinamentos</p>
-              <p className="text-gray-600 text-sm mb-4">
-                Trainer certificado com vasta experiência em capacitação de equipes comerciais e desenvolvimento de vendedores.
-              </p>
-              <div className="flex justify-center space-x-3">
-                <a href="#" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
-                  </svg>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-                  </svg>
-                </a>
-              </div>
+              <a 
+                href="https://www.linkedin.com/in/anderssilva/" 
+                target="_blank" 
+                className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm transition-colors"
+              >
+                Ver perfil no LinkedIn
+              </a>
             </div>
           </div>
         </div>
@@ -519,7 +497,13 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h4 className="text-lg font-bold mb-4 text-[#35DD48]">Sellou</h4>
+              <div className="flex items-center mb-4">
+                <img 
+                  src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" 
+                  alt="Sellou" 
+                  className="h-6 brightness-0 invert"
+                />
+              </div>
               <p className="text-gray-400">Performance excepcional em um toque.</p>
             </div>
             <div>
