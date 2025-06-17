@@ -7,7 +7,13 @@ const PrivacyPolicy = () => {
       {/* Header */}
       <header className="w-full bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="/" className="text-2xl font-bold" style={{ color: '#008440' }}>Sellou</a>
+          <a href="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" 
+              alt="Sellou" 
+              className="h-8"
+            />
+          </a>
           <nav className="hidden md:flex items-center justify-center flex-1 mx-10">
             <a href="/" className="mx-4 text-gray-700 hover:text-[#35DD48] transition-colors">Início</a>
             <a href="#servicos" className="mx-4 text-gray-700 hover:text-[#35DD48] transition-colors">Serviços</a>
@@ -79,7 +85,13 @@ const PrivacyPolicy = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h4 className="text-lg font-bold mb-4 text-[#35DD48]">Sellou</h4>
+              <div className="flex items-center mb-4">
+                <img 
+                  src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" 
+                  alt="Sellou" 
+                  className="h-6 brightness-0 invert"
+                />
+              </div>
               <p className="text-gray-400">Performance excepcional em um toque.</p>
             </div>
             <div>

@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { MessageCircle } from 'lucide-react';
 
 const Index = () => {
   useEffect(() => {
@@ -99,17 +100,29 @@ const Index = () => {
                 <div className="p-6">
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="bg-green-50 p-4 rounded-lg">
-                      <h4 className="font-medium text-sm text-[#008440]">Conversão</h4>
-                      <div className="text-2xl font-bold mb-1 text-[#008440]">15.7%</div>
-                      <div className="text-xs text-gray-500">Aumento médio</div>
+                      <h4 className="font-medium text-sm text-[#008440]">Receita</h4>
+                      <div className="text-2xl font-bold mb-1 text-[#008440]">R$ 75.771,68</div>
+                      <div className="text-xs text-gray-500">Período atual</div>
                     </div>
                     <div className="bg-green-50 p-4 rounded-lg">
-                      <h4 className="font-medium text-sm text-[#008440]">Performance</h4>
-                      <div className="text-2xl font-bold mb-1 text-[#008440]">98.4%</div>
-                      <div className="text-xs text-gray-500">Satisfação</div>
+                      <h4 className="font-medium text-sm text-[#008440]">Ticket Médio</h4>
+                      <div className="text-2xl font-bold mb-1 text-[#008440]">R$ 1.762,13</div>
+                      <div className="text-xs text-gray-500">Por cliente</div>
                     </div>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg mb-4">
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <h4 className="font-medium text-sm text-blue-600">Total de Clientes</h4>
+                      <div className="text-2xl font-bold mb-1 text-blue-600">6</div>
+                      <div className="text-xs text-gray-500">Ativos</div>
+                    </div>
+                    <div className="bg-orange-50 p-4 rounded-lg">
+                      <h4 className="font-medium text-sm text-orange-600">Usuários Ativos</h4>
+                      <div className="text-2xl font-bold mb-1 text-orange-600">1</div>
+                      <div className="text-xs text-gray-500">Online agora</div>
+                    </div>
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg">
                     <p className="text-sm text-gray-700">
                       <span className="text-[#008440] font-semibold">Sellou</span> transformando resultados de vendas com estratégias comprovadas
                     </p>
@@ -133,10 +146,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
-                  <path fillRule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 102 0V3a2 2 0 012 2v6a2 2 0 002 2v1a1 1 0 102 0v-1a2 2 0 002-2V5a2 2 0 00-2-2v1a1 1 0 10-2 0V3a2 2 0 00-2 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5z"/>
-                </svg>
+                <MessageCircle className="w-8 h-8 text-[#35DD48]" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">Consultoria Estratégica</h3>
               <p className="text-gray-600 text-center">Análise profunda do seu negócio com estratégias personalizadas para acelerar vendas e maximizar resultados.</p>
