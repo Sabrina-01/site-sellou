@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { MessageCircle } from 'lucide-react';
 
@@ -87,47 +86,12 @@ const Index = () => {
               </div>
             </div>
             <div className="w-full md:w-1/2">
-              <div className="bg-white rounded-lg shadow-xl overflow-hidden">
-                <div className="bg-gray-100 p-3 flex justify-between items-center">
-                  <div className="flex items-center">
-                    <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  </div>
-                  <div className="text-sm text-gray-500">Dashboard Sellou</div>
-                  <div className="w-6"></div>
-                </div>
-                <div className="p-6">
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <h4 className="font-medium text-sm text-[#008440]">Receita</h4>
-                      <div className="text-2xl font-bold mb-1 text-[#008440]">R$ 75.771,68</div>
-                      <div className="text-xs text-gray-500">Período atual</div>
-                    </div>
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <h4 className="font-medium text-sm text-[#008440]">Ticket Médio</h4>
-                      <div className="text-2xl font-bold mb-1 text-[#008440]">R$ 1.762,13</div>
-                      <div className="text-xs text-gray-500">Por cliente</div>
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="bg-blue-50 p-4 rounded-lg">
-                      <h4 className="font-medium text-sm text-blue-600">Total de Clientes</h4>
-                      <div className="text-2xl font-bold mb-1 text-blue-600">6</div>
-                      <div className="text-xs text-gray-500">Ativos</div>
-                    </div>
-                    <div className="bg-orange-50 p-4 rounded-lg">
-                      <h4 className="font-medium text-sm text-orange-600">Usuários Ativos</h4>
-                      <div className="text-2xl font-bold mb-1 text-orange-600">1</div>
-                      <div className="text-xs text-gray-500">Online agora</div>
-                    </div>
-                  </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <p className="text-sm text-gray-700">
-                      <span className="text-[#008440] font-semibold">Sellou</span> transformando resultados de vendas com estratégias comprovadas
-                    </p>
-                  </div>
-                </div>
+              <div className="rounded-lg shadow-xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/dashboard-sellou.png" 
+                  alt="Dashboard Sellou" 
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </div>
           </div>
