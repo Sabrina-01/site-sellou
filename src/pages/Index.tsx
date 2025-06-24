@@ -1,8 +1,9 @@
-
-import React, { useEffect } from 'react';
-import { MessageCircle } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { MessageCircle, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Index = () => {
+  const [expandedService, setExpandedService] = useState<number | null>(null);
+
   useEffect(() => {
     // CTA Section animation
     const ctaObserver = new IntersectionObserver((entries) => {
@@ -36,6 +37,67 @@ const Index = () => {
       ctaObserver.disconnect();
     };
   }, []);
+
+  const toggleService = (index: number) => {
+    setExpandedService(expandedService === index ? null : index);
+  };
+
+  const services = [
+    {
+      icon: <MessageCircle className="w-8 h-8 text-[#35DD48]" />,
+      title: "Consultoria Estratégica",
+      description: "Análise profunda do seu negócio com estratégias personalizadas para acelerar vendas e maximizar resultados.",
+      bullets: [
+        "Diagnóstico completo do processo de vendas",
+        "Definição de estratégias personalizadas",
+        "Análise de concorrência e mercado",
+        "Plano de ação com metas claras",
+        "Acompanhamento e ajustes contínuos"
+      ]
+    },
+    {
+      icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+      </svg>,
+      title: "Plataforma de Vendas",
+      description: "Tecnologia avançada para otimizar processos de vendas, CRM integrado e automação de marketing.",
+      bullets: [
+        "CRM completo e intuitivo",
+        "Automação de marketing digital",
+        "Gestão de pipeline de vendas",
+        "Relatórios e dashboards em tempo real",
+        "Integração com principais ferramentas"
+      ]
+    },
+    {
+      icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+      </svg>,
+      title: "Treinamento de Equipe",
+      description: "Capacitação completa para sua equipe de vendas com metodologias comprovadas e acompanhamento personalizado.",
+      bullets: [
+        "Técnicas avançadas de vendas",
+        "Desenvolvimento de soft skills",
+        "Treinamento em ferramentas digitais",
+        "Coaching individual e em grupo",
+        "Certificação e acompanhamento contínuo"
+      ]
+    },
+    {
+      icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"/>
+      </svg>,
+      title: "Palestras",
+      description: "Eventos inspiradores e educativos sobre vendas, liderança e crescimento empresarial para motivar sua equipe.",
+      bullets: [
+        "Palestras motivacionais para equipes",
+        "Workshops práticos de vendas",
+        "Eventos corporativos personalizados",
+        "Conteúdo sobre liderança e gestão",
+        "Formatos presenciais e online"
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -109,43 +171,47 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MessageCircle className="w-8 h-8 text-[#35DD48]" />
+            {services.map((service, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div 
+                  className="p-6 cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  onClick={() => toggleService(index)}
+                >
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 text-center">{service.title}</h3>
+                  <p className="text-gray-600 text-center mb-4">{service.description}</p>
+                  <div className="flex justify-center">
+                    {expandedService === index ? (
+                      <ChevronUp className="w-5 h-5 text-[#35DD48]" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-[#35DD48]" />
+                    )}
+                  </div>
+                </div>
+                
+                {expandedService === index && (
+                  <div className="px-6 pb-6 border-t border-gray-100 animate-in slide-in-from-top-2 duration-300">
+                    <div className="pt-4">
+                      <ul className="space-y-2 mb-6">
+                        {service.bullets.map((bullet, bulletIndex) => (
+                          <li key={bulletIndex} className="flex items-start text-sm text-gray-700">
+                            <div className="w-2 h-2 bg-[#35DD48] rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            {bullet}
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="text-center">
+                        <button className="bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                          Saiba mais
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Consultoria Estratégica</h3>
-              <p className="text-gray-600 text-center">Análise profunda do seu negócio com estratégias personalizadas para acelerar vendas e maximizar resultados.</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Plataforma de Vendas</h3>
-              <p className="text-gray-600 text-center">Tecnologia avançada para otimizar processos de vendas, CRM integrado e automação de marketing.</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Treinamento de Equipe</h3>
-              <p className="text-gray-600 text-center">Capacitação completa para sua equipe de vendas com metodologias comprovadas e acompanhamento personalizado.</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"/>
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Palestras</h3>
-              <p className="text-gray-600 text-center">Eventos inspiradores e educativos sobre vendas, liderança e crescimento empresarial para motivar sua equipe.</p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
