@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { MessageCircle } from 'lucide-react';
 
@@ -150,53 +151,67 @@ const Index = () => {
       </section>
 
       {/* Results Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="bg-gray-50 rounded-lg p-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">
-                Resultados que vendem mais
-              </h2>
-              
+            <div className="text-center mb-8">
+              <span className="inline-block px-4 py-1 bg-green-100 text-[#008440] rounded-full text-sm font-medium mb-3">Resultados</span>
+              <h2 className="text-3xl font-bold mb-2 text-gray-900">Resultados que vendem mais</h2>
+              <p className="text-gray-600">Dados comprovados do impacto das nossas soluções</p>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-100">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                <div className="text-center">
-                  <div className="text-lg md:text-xl font-semibold text-gray-900 mb-1">
-                    Vendas +29%
+                <div className="text-center group">
+                  <div className="text-2xl md:text-3xl font-bold text-[#35DD48] mb-2 group-hover:text-[#008440] transition-colors">
+                    +29%
                   </div>
-                  <div className="text-sm text-gray-600">
+                  <div className="text-sm font-medium text-gray-900 mb-1">
+                    Vendas
+                  </div>
+                  <div className="text-xs text-gray-500">
                     com CRM
                   </div>
                 </div>
                 
-                <div className="text-center">
-                  <div className="text-lg md:text-xl font-semibold text-gray-900 mb-1">
-                    Produtividade +34%
+                <div className="text-center group">
+                  <div className="text-2xl md:text-3xl font-bold text-[#35DD48] mb-2 group-hover:text-[#008440] transition-colors">
+                    +17%
                   </div>
-                  <div className="text-sm text-gray-600">
-                    com automação
+                  <div className="text-sm font-medium text-gray-900 mb-1">
+                    Equipes mais produtivas
+                  </div>
+                  <div className="text-xs text-gray-500">
+                    e assertivas
                   </div>
                 </div>
                 
-                <div className="text-center">
-                  <div className="text-lg md:text-xl font-semibold text-gray-900 mb-1">
-                    +20% em eficiência
+                <div className="text-center group">
+                  <div className="text-2xl md:text-3xl font-bold text-[#35DD48] mb-2 group-hover:text-[#008440] transition-colors">
+                    +20%
                   </div>
-                  <div className="text-sm text-gray-600">
+                  <div className="text-sm font-medium text-gray-900 mb-1">
+                    Eficiência
+                  </div>
+                  <div className="text-xs text-gray-500">
                     com consultoria
                   </div>
                 </div>
                 
-                <div className="text-center">
-                  <div className="text-lg md:text-xl font-semibold text-gray-900 mb-1">
-                    Ciclo de vendas -30%
+                <div className="text-center group">
+                  <div className="text-2xl md:text-3xl font-bold text-[#35DD48] mb-2 group-hover:text-[#008440] transition-colors">
+                    30%
                   </div>
-                  <div className="text-sm text-gray-600">
-                    com estratégia
+                  <div className="text-sm font-medium text-gray-900 mb-1">
+                    Ciclo de vendas
+                  </div>
+                  <div className="text-xs text-gray-500">
+                    mais rápido
                   </div>
                 </div>
               </div>
               
-              <div className="mt-6 text-center">
+              <div className="mt-8 pt-6 border-t border-gray-100 text-center">
                 <p className="text-xs text-gray-500">
                   Fontes: McKinsey, Forbes Insights, The Business Research Company.
                 </p>
