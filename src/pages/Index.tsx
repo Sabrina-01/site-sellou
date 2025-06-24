@@ -149,6 +149,63 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Results Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-gray-50 rounded-lg p-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">
+                Resultados que vendem mais
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div className="text-center">
+                  <div className="text-lg md:text-xl font-semibold text-gray-900 mb-1">
+                    Vendas +29%
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    com CRM
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="text-lg md:text-xl font-semibold text-gray-900 mb-1">
+                    Produtividade +34%
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    com automação
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="text-lg md:text-xl font-semibold text-gray-900 mb-1">
+                    +20% em eficiência
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    com consultoria
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="text-lg md:text-xl font-semibold text-gray-900 mb-1">
+                    Ciclo de vendas -30%
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    com estratégia
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-6 text-center">
+                <p className="text-xs text-gray-500">
+                  Fontes: McKinsey, Forbes Insights, The Business Research Company.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="sobre" className="py-16 bg-white">
         <div className="container mx-auto px-4">
