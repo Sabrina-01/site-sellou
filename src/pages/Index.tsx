@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { MessageCircle, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Index = () => {
-  const [expandedService, setExpandedService] = useState<number | null>(null);
+  const [expandedServices, setExpandedServices] = useState<number[]>([]);
 
   useEffect(() => {
     // CTA Section animation
@@ -39,7 +39,11 @@ const Index = () => {
   }, []);
 
   const toggleService = (index: number) => {
-    setExpandedService(expandedService === index ? null : index);
+    setExpandedServices(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    );
   };
 
   const services = [
@@ -173,25 +177,27 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div 
-                  className="p-6 cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                  onClick={() => toggleService(index)}
-                >
+                <div className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-center">{service.title}</h3>
                   <p className="text-gray-600 text-center mb-4">{service.description}</p>
                   <div className="flex justify-center">
-                    {expandedService === index ? (
-                      <ChevronUp className="w-5 h-5 text-[#35DD48]" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-[#35DD48]" />
-                    )}
+                    <button 
+                      onClick={() => toggleService(index)}
+                      className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-green-50 transition-colors"
+                    >
+                      {expandedServices.includes(index) ? (
+                        <ChevronUp className="w-5 h-5 text-[#35DD48]" />
+                      ) : (
+                        <ChevronDown className="w-5 h-5 text-[#35DD48]" />
+                      )}
+                    </button>
                   </div>
                 </div>
                 
-                {expandedService === index && (
+                {expandedServices.includes(index) && (
                   <div className="px-6 pb-6 border-t border-gray-100 animate-in slide-in-from-top-2 duration-300">
                     <div className="pt-4">
                       <ul className="space-y-2 mb-6">
