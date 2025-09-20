@@ -210,9 +210,12 @@ const Index = () => {
                         ))}
                       </ul>
                       <div className="text-center">
-                        <button className="bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                        <a 
+                          href={`/${service.title.toLowerCase().replace(/\s+/g, '-').replace('ã', 'a')}`}
+                          className="bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block"
+                        >
                           Saiba mais
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
