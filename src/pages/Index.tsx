@@ -1,9 +1,9 @@
 
-import React, { useEffect, useState } from 'react';
-import { MessageCircle, ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
-  const [expandedServices, setExpandedServices] = useState<number[]>([]);
 
   useEffect(() => {
     // CTA Section animation
@@ -39,26 +39,13 @@ const Index = () => {
     };
   }, []);
 
-  const toggleService = (index: number) => {
-    setExpandedServices(prev => 
-      prev.includes(index) 
-        ? prev.filter(i => i !== index)
-        : [...prev, index]
-    );
-  };
 
   const services = [
     {
       icon: <MessageCircle className="w-8 h-8 text-[#35DD48]" />,
       title: "Consultoria Estratégica",
       description: "Análise profunda do seu negócio com estratégias personalizadas para acelerar vendas e maximizar resultados.",
-      bullets: [
-        "Diagnóstico completo do processo de vendas",
-        "Definição de estratégias personalizadas",
-        "Análise de concorrência e mercado",
-        "Plano de ação com metas claras",
-        "Acompanhamento e ajustes contínuos"
-      ]
+      link: "/consultoria-estrategica"
     },
     {
       icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
@@ -66,13 +53,7 @@ const Index = () => {
       </svg>,
       title: "Plataforma de Vendas",
       description: "Tecnologia avançada para otimizar processos de vendas, CRM integrado e automação de marketing.",
-      bullets: [
-        "CRM completo e intuitivo",
-        "Automação de marketing digital",
-        "Gestão de pipeline de vendas",
-        "Relatórios e dashboards em tempo real",
-        "Integração com principais ferramentas"
-      ]
+      link: "/plataforma-de-vendas"
     },
     {
       icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
@@ -80,13 +61,7 @@ const Index = () => {
       </svg>,
       title: "Treinamento de Equipe",
       description: "Capacitação completa para sua equipe de vendas com metodologias comprovadas e acompanhamento personalizado.",
-      bullets: [
-        "Técnicas avançadas de vendas",
-        "Desenvolvimento de soft skills",
-        "Treinamento em ferramentas digitais",
-        "Coaching individual e em grupo",
-        "Certificação e acompanhamento contínuo"
-      ]
+      link: "/treinamento-de-equipe"
     },
     {
       icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
@@ -94,13 +69,7 @@ const Index = () => {
       </svg>,
       title: "Palestras",
       description: "Eventos inspiradores e educativos sobre vendas, liderança e crescimento empresarial para motivar sua equipe.",
-      bullets: [
-        "Palestras motivacionais para equipes",
-        "Workshops práticos de vendas",
-        "Eventos corporativos personalizados",
-        "Conteúdo sobre liderança e gestão",
-        "Formatos presenciais e online"
-      ]
+      link: "/palestras"
     }
   ];
 
@@ -177,50 +146,24 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-                <div className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex-grow flex flex-col">
+              <Link 
+                key={index} 
+                to={service.link}
+                className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+              >
+                <div className="p-6 flex-grow flex flex-col">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-center">{service.title}</h3>
                   <p className="text-gray-600 text-center mb-4 flex-grow">{service.description}</p>
-                  <div className="flex justify-center mt-auto">
-                    <button 
-                      onClick={() => toggleService(index)}
-                      className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-green-50 transition-colors"
-                    >
-                      {expandedServices.includes(index) ? (
-                        <ChevronUp className="w-5 h-5 text-[#35DD48]" />
-                      ) : (
-                        <ChevronDown className="w-5 h-5 text-[#35DD48]" />
-                      )}
-                    </button>
+                  <div className="text-center mt-auto">
+                    <span className="bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block">
+                      Saiba mais
+                    </span>
                   </div>
                 </div>
-                
-                {expandedServices.includes(index) && (
-                  <div className="px-6 pb-6 border-t border-gray-100 animate-in slide-in-from-top-2 duration-300">
-                    <div className="pt-4">
-                      <ul className="space-y-2 mb-6">
-                        {service.bullets.map((bullet, bulletIndex) => (
-                          <li key={bulletIndex} className="flex items-start text-sm text-gray-700">
-                            <div className="w-2 h-2 bg-[#35DD48] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            {bullet}
-                          </li>
-                        ))}
-                      </ul>
-                      <div className="text-center">
-                        <a 
-                          href={`/${service.title.toLowerCase().replace(/\s+/g, '-').replace('ã', 'a')}`}
-                          className="bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block"
-                        >
-                          Saiba mais
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
+              </Link>
             ))}
           </div>
         </div>
