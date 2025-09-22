@@ -254,17 +254,17 @@ const Index = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-4">Nossa Missão</h3>
                 <p className="text-gray-600 mb-6">
-                  Na Sellou, nossa missão é transformar a maneira como as empresas vendem, oferecendo soluções inovadoras que combinam estratégia, tecnologia e capacitação para maximizar o potencial comercial de cada cliente.
+                  Ser o principal facilitador de performance em vendas entre representantes e indústrias/distribuidores
                 </p>
                 
                 <h3 className="text-2xl font-bold mb-4">Nossa Visão</h3>
                 <p className="text-gray-600 mb-6">
-                  Ser reconhecida como a principal referência em soluções de vendas no Brasil, ajudando empresas de todos os portes a alcançarem resultados excepcionais e sustentáveis.
+                  Ser a maior rede de software de vendas do Brasil até 2030
                 </p>
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold mb-4">Nossos Valores</h3>
+                <h3 className="text-2xl font-bold mb-4">💎 Valores</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
@@ -273,8 +273,8 @@ const Index = () => {
                       </svg>
                     </div>
                     <div>
-                      <strong className="text-gray-900">Excelência:</strong>
-                      <span className="text-gray-600"> Buscamos sempre a melhor performance em tudo que fazemos</span>
+                      <strong className="text-gray-900">Transparência e União:</strong>
+                      <span className="text-gray-600"> Mantemos relacionamentos claros e honestos, promovendo a união em todas as nossas ações</span>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -284,8 +284,8 @@ const Index = () => {
                       </svg>
                     </div>
                     <div>
-                      <strong className="text-gray-900">Inovação:</strong>
-                      <span className="text-gray-600"> Utilizamos as mais modernas tecnologias e metodologias</span>
+                      <strong className="text-gray-900">Excelência e Comprometimento:</strong>
+                      <span className="text-gray-600"> Buscamos sempre a melhor performance com total dedicação aos nossos objetivos</span>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -295,19 +295,8 @@ const Index = () => {
                       </svg>
                     </div>
                     <div>
-                      <strong className="text-gray-900">Transparência:</strong>
-                      <span className="text-gray-600"> Mantemos relacionamentos claros e honestos com nossos clientes</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                      </svg>
-                    </div>
-                    <div>
-                      <strong className="text-gray-900">Resultados:</strong>
-                      <span className="text-gray-600"> Focamos em entregar resultados concretos e mensuráveis</span>
+                      <strong className="text-gray-900">Raça e Foco no Resultado:</strong>
+                      <span className="text-gray-600"> Temos determinação e foco absoluto na entrega de resultados concretos e mensuráveis</span>
                     </div>
                   </li>
                 </ul>
