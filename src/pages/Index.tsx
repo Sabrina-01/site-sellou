@@ -264,7 +264,7 @@ const Index = () => {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold mb-4">💎 Valores</h3>
+                <h3 className="text-2xl font-bold mb-4">Valores</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <div className="w-6 h-6 bg-[#35DD48] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
