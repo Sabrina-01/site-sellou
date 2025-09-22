@@ -53,7 +53,7 @@ const Index = () => {
       </svg>,
       title: "Plataforma de Vendas",
       description: "Tecnologia avançada para otimizar processos de vendas, CRM integrado e automação de marketing.",
-      link: "/plataforma-de-vendas"
+      link: "/plataforma-vendas"
     },
     {
       icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
@@ -61,7 +61,7 @@ const Index = () => {
       </svg>,
       title: "Treinamento de Equipe",
       description: "Capacitação completa para sua equipe de vendas com metodologias comprovadas e acompanhamento personalizado.",
-      link: "/treinamento-de-equipe"
+      link: "/treinamento-equipe"
     },
     {
       icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
@@ -93,7 +93,7 @@ const Index = () => {
             <a href="#contato" className="mx-4 text-gray-700 hover:text-[#35DD48] transition-colors">Contato</a>
           </nav>
           <div>
-            <a href="https://forms.gle/NNfEEyxHa6v6JPuJ6" target="_blank" className="bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg whitespace-nowrap text-sm transition-colors">
+            <a href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." target="_blank" className="bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg whitespace-nowrap text-sm transition-colors">
               Contato
             </a>
           </div>
@@ -113,7 +113,7 @@ const Index = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="https://forms.gle/NNfEEyxHa6v6JPuJ6" 
+                  href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
                   target="_blank"
                   className="group relative bg-gradient-to-r from-[#35DD48] to-[#008440] text-white px-12 py-4 rounded-full font-medium whitespace-nowrap overflow-hidden transition-all duration-500 hover:shadow-lg hover:shadow-green-500/30 hover:-translate-y-1"
                 >
@@ -380,7 +380,7 @@ const Index = () => {
             <p className="text-xl text-gray-600 mb-8">Junte-se a centenas de empresas que já transformaram seus resultados com a Sellou</p>
             <div className="flex flex-col items-center gap-4">
               <a 
-                href="https://forms.gle/NNfEEyxHa6v6JPuJ6" 
+                href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
                 target="_blank"
                 className="bg-[#35DD48] hover:bg-[#008440] text-white px-8 py-4 rounded-full text-lg font-medium whitespace-nowrap transform hover:scale-105 transition-all duration-300"
               >

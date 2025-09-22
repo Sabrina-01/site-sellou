@@ -23,7 +23,7 @@ const Palestras = () => {
             <Link to="/#contato" className="mx-4 text-gray-700 hover:text-[#35DD48] transition-colors">Contato</Link>
           </nav>
           <div>
-            <a href="https://forms.gle/NNfEEyxHa6v6JPuJ6" target="_blank" className="bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg whitespace-nowrap text-sm transition-colors">
+            <a href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." target="_blank" className="bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg whitespace-nowrap text-sm transition-colors">
               Contato
             </a>
           </div>
@@ -50,7 +50,7 @@ const Palestras = () => {
               Eventos inspiradores e educativos sobre vendas, liderança e crescimento empresarial para motivar sua equipe.
             </p>
             <a 
-              href="https://forms.gle/NNfEEyxHa6v6JPuJ6" 
+              href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
               target="_blank"
               className="bg-[#35DD48] hover:bg-[#008440] text-white px-8 py-4 rounded-full text-lg font-medium transform hover:scale-105 transition-all duration-300"
             >
@@ -192,7 +192,7 @@ const Palestras = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Inspire sua Equipe com Conteúdo de Qualidade</h2>
             <p className="text-xl text-gray-600 mb-8">Transforme eventos em momentos marcantes de aprendizado e motivação</p>
             <a 
-              href="https://forms.gle/NNfEEyxHa6v6JPuJ6" 
+              href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
               target="_blank"
               className="bg-[#35DD48] hover:bg-[#008440] text-white px-8 py-4 rounded-full text-lg font-medium transform hover:scale-105 transition-all duration-300"
             >
