@@ -167,7 +167,7 @@ const Palestras = () => {
                 <ul className="space-y-2 text-gray-600">
                   <li>• Vendas digitais</li>
                   <li>• Automação de processos</li>
-                  <li>• CRM e tecnologia</li>
+                  <li>• Força de vendas e tecnologia</li>
                   <li>• Marketing digital para vendas</li>
                 </ul>
               </div>

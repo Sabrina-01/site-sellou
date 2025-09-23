@@ -84,7 +84,7 @@ const TreinamentoEquipe = () => {
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Treinamento em ferramentas digitais</h3>
-                  <p className="text-gray-600">Capacitação no uso de CRM, automação de marketing e ferramentas de produtividade.</p>
+                  <p className="text-gray-600">Capacitação no uso de Força de vendas, automação de marketing e ferramentas de produtividade.</p>
                 </div>
               </div>
               <div className="flex items-start">

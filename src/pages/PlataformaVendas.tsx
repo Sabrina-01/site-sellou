@@ -47,7 +47,7 @@ const PlataformaVendas = () => {
               Plataforma de Vendas
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              Tecnologia avançada para otimizar processos de vendas, CRM integrado e automação de marketing.
+              Tecnologia avançada para otimizar processos de vendas, Força de vendas integrado e automação de marketing.
             </p>
             <a 
               href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
@@ -69,7 +69,7 @@ const PlataformaVendas = () => {
               <div className="flex items-start">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">CRM completo e intuitivo</h3>
+                  <h3 className="text-lg font-semibold mb-2">Força de vendas completo e intuitivo</h3>
                   <p className="text-gray-600">Sistema completo de gestão de relacionamento com clientes, fácil de usar e configurar.</p>
                 </div>
               </div>
