@@ -181,7 +181,7 @@ const TreinamentoEquipe = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">Nossos Treinamentos</h2>
-            <div className="relative">
+            <div className="relative px-12">
               <Carousel className="w-full">
                 <CarouselContent className="-ml-1">
                   {/* Card 1 - Domínio Comercial */}
@@ -204,7 +204,7 @@ const TreinamentoEquipe = () => {
                           Transformar vendedores comuns em CEOs do território, com autoconfiança, autoridade e performance.
                         </p>
                         <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20o%20treinamento%20Domínio%20Comercial." 
+                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Domínio%20Comercial." 
                           target="_blank"
                           className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
                         >
@@ -234,7 +234,7 @@ const TreinamentoEquipe = () => {
                           Lapidação de mentalidade para líderes que brilham na crise e transformam pressão em potência.
                         </p>
                         <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20o%20treinamento%20Líder%20Diamante." 
+                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Líder%20Diamante." 
                           target="_blank"
                           className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
                         >
@@ -265,7 +265,7 @@ const TreinamentoEquipe = () => {
                           Modelo baseado em neurociência. Mais engajamento, equipes leais, cultura forte e decisões assertivas.
                         </p>
                         <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20o%20treinamento%20A%20Mente%20do%20Líder%20Extraordinário." 
+                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20A%20Mente%20do%20Líder%20Extraordinário." 
                           target="_blank"
                           className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
                         >
@@ -296,7 +296,7 @@ const TreinamentoEquipe = () => {
                           Preparar CEOs, diretores e gerentes para manter clareza, coragem e performance mesmo nos piores cenários.
                         </p>
                         <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20o%20treinamento%20Liderança%20em%20Tempos%20Difíceis." 
+                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Liderança%20em%20Tempos%20Difíceis." 
                           target="_blank"
                           className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
                         >
@@ -326,7 +326,7 @@ const TreinamentoEquipe = () => {
                           Formação de líderes estratégicos que inspiram, constroem lealdade e transformam resultados.
                         </p>
                         <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20o%20treinamento%20Gerente%20de%20Sucesso." 
+                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Gerente%20de%20Sucesso." 
                           target="_blank"
                           className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
                         >
@@ -358,7 +358,7 @@ const TreinamentoEquipe = () => {
                           Campo de batalha para transformar abordagens genéricas em vendas de impacto, com foco em margem e negociação estratégica.
                         </p>
                         <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20o%20treinamento%20O%20Jogo%20Completo%20das%20Vendas." 
+                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20O%20Jogo%20Completo%20das%20Vendas." 
                           target="_blank"
                           className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
                         >
@@ -389,7 +389,7 @@ const TreinamentoEquipe = () => {
                           Passo a passo para SDRs, iniciantes e televendas dominarem técnica, processo e atitude.
                         </p>
                         <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20o%20treinamento%20Passos%20para%20Alta%20Performance." 
+                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Passos%20para%20Alta%20Performance." 
                           target="_blank"
                           className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
                         >
@@ -419,7 +419,7 @@ const TreinamentoEquipe = () => {
                           Estratégias práticas para formar e sustentar times comerciais de alta performance.
                         </p>
                         <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20o%20treinamento%20Gestão%20Comercial%20e%20Desenvolvimento%20de%20Equipes." 
+                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Gestão%20Comercial%20e%20Desenvolvimento%20de%20Equipes." 
                           target="_blank"
                           className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
                         >
@@ -449,7 +449,7 @@ const TreinamentoEquipe = () => {
                           Combina fundamentos clássicos com IA, empatia e dados para negociação estratégica e encantamento do cliente.
                         </p>
                         <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20o%20treinamento%20Técnicas%20de%20Negociação%20e%20Poder%20de%20Persuasão." 
+                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Técnicas%20de%20Negociação%20e%20Poder%20de%20Persuasão." 
                           target="_blank"
                           className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
                         >
@@ -479,7 +479,7 @@ const TreinamentoEquipe = () => {
                           Virada de chave para transformar ligações em conversões reais, com foco em performance e realidade brasileira.
                         </p>
                         <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20o%20treinamento%20Formação%20e%20Técnicas%20de%20Vendas%20para%20Televendas." 
+                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Formação%20e%20Técnicas%20de%20Vendas%20para%20Televendas." 
                           target="_blank"
                           className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
                         >
@@ -489,8 +489,8 @@ const TreinamentoEquipe = () => {
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="left-2 bg-white border-2 border-[#35DD48] text-[#35DD48] hover:bg-[#35DD48] hover:text-white shadow-lg" />
+                <CarouselNext className="right-2 bg-white border-2 border-[#35DD48] text-[#35DD48] hover:bg-[#35DD48] hover:text-white shadow-lg" />
               </Carousel>
             </div>
           </div>
