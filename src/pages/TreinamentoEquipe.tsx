@@ -103,35 +103,52 @@ const TreinamentoEquipe = () => {
       {/* Diferenciais de Anderson Medeiros */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">Diferenciais de Anderson Medeiros</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="flex items-start">
-                <BookOpen className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Didática prática</h3>
-                  <p className="text-gray-600">Abordagem direta e aplicável ao cotidiano comercial.</p>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+              {/* Foto do Anderson */}
+              <div className="flex justify-center">
+                <div className="relative">
+                  <div className="w-64 h-64 rounded-full overflow-hidden shadow-2xl">
+                    <img 
+                      src="/lovable-uploads/8c91ba33-b728-43a4-aa16-79f4d1c1b75a.png" 
+                      alt="Anderson Medeiros" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute inset-0 rounded-full ring-4 ring-[#35DD48]/20"></div>
                 </div>
               </div>
-              <div className="flex items-start">
-                <Users className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Experiência executiva</h3>
-                  <p className="text-gray-600">Vivência real como executivo comercial de alto nível.</p>
+              
+              {/* Diferenciais */}
+              <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex items-start">
+                  <BookOpen className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">Didática prática</h3>
+                    <p className="text-gray-600">Abordagem direta e aplicável ao cotidiano comercial.</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start">
-                <Target className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Foco em resultados</h3>
-                  <p className="text-gray-600">Atenção total aos indicadores e métricas de desempenho.</p>
+                <div className="flex items-start">
+                  <Users className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">Experiência executiva</h3>
+                    <p className="text-gray-600">Vivência real como executivo comercial de alto nível.</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start">
-                <MessageSquare className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Linguagem atual</h3>
-                  <p className="text-gray-600">Comunicação inspiradora alinhada ao novo perfil de liderança.</p>
+                <div className="flex items-start">
+                  <Target className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">Foco em resultados</h3>
+                    <p className="text-gray-600">Atenção total aos indicadores e métricas de desempenho.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <MessageSquare className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">Linguagem atual</h3>
+                    <p className="text-gray-600">Comunicação inspiradora alinhada ao novo perfil de liderança.</p>
+                  </div>
                 </div>
               </div>
             </div>
