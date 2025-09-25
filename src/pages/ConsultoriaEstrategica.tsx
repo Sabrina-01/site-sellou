@@ -39,7 +39,7 @@ const ConsultoriaEstrategica = () => {
               Voltar para página inicial
             </Link>
             <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <MessageCircle className="w-10 h-10 text-[#35DD48]" />
+              <TrendingUp className="w-10 h-10 text-[#35DD48]" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Consultoria Estratégica

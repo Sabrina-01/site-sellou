@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, CheckCircle, BookOpen, Trophy, MessageSquare, Target, Lightbulb, Clock, Users } from 'lucide-react';
+import { ArrowLeft, CheckCircle, BookOpen, Trophy, MessageSquare, Target, Lightbulb, Clock, Users, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
@@ -40,9 +40,7 @@ const TreinamentoEquipe = () => {
               Voltar para página inicial
             </Link>
             <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-10 h-10 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-              </svg>
+              <GraduationCap className="w-10 h-10 text-[#35DD48]" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Treinamentos

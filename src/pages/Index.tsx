@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { MessageCircle } from 'lucide-react';
+import { TrendingUp, Laptop, GraduationCap, Presentation } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -42,31 +42,25 @@ const Index = () => {
 
   const services = [
     {
-      icon: <MessageCircle className="w-8 h-8 text-[#35DD48]" />,
+      icon: <TrendingUp className="w-8 h-8 text-[#35DD48]" />,
       title: "Consultoria Estratégica",
       description: "Análise profunda do seu negócio com estratégias personalizadas para acelerar vendas e maximizar resultados.",
       link: "/consultoria-estrategica"
     },
     {
-      icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-      </svg>,
+      icon: <Laptop className="w-8 h-8 text-[#35DD48]" />,
       title: "Plataforma de Vendas",
       description: "Tecnologia avançada para otimizar processos de vendas, Força de vendas integrado e automação de marketing.",
       link: "/plataforma-vendas"
     },
     {
-      icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-      </svg>,
+      icon: <GraduationCap className="w-8 h-8 text-[#35DD48]" />,
       title: "Treinamento de Equipe",
       description: "Capacitação completa para sua equipe de vendas com metodologias comprovadas e acompanhamento personalizado.",
       link: "/treinamento-equipe"
     },
     {
-      icon: <svg className="w-8 h-8 text-[#35DD48]" fill="currentColor" viewBox="0 0 20 20">
-        <path fillRule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"/>
-      </svg>,
+      icon: <Presentation className="w-8 h-8 text-[#35DD48]" />,
       title: "Palestras",
       description: "Eventos inspiradores e educativos sobre vendas, liderança e crescimento empresarial para motivar sua equipe.",
       link: "/palestras"
