@@ -194,7 +194,7 @@ const Palestras = () => {
               target="_blank"
               className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
             >
-              Solicitar Orçamento para Palestra
+              Solicitar Orçamento
             </a>
           </div>
         </div>
