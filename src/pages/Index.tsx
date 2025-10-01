@@ -119,8 +119,8 @@ const Index = () => {
             <div className="w-full md:w-1/2">
               <div className="rounded-lg shadow-xl overflow-hidden max-w-md mx-auto md:max-w-none">
                 <img 
-                  src="/lovable-uploads/f789c3fe-8db5-471c-8621-1b5d170c72cf.png" 
-                  alt="Dashboard Sellou" 
+                  src="/lovable-uploads/dashboard-sellou.jpeg" 
+                  alt="Dashboard Sellou - Plataforma de Vendas" 
                   className="w-full h-auto object-cover"
                 />
               </div>

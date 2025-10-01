@@ -33,27 +33,38 @@ const PlataformaVendas = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-green-50 py-12 lg:py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Link to="/" className="inline-flex items-center text-[#008440] hover:text-[#35DD48] mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Voltar para página inicial
-            </Link>
-            <div className="w-16 h-16 lg:w-20 lg:h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6">
-              <Laptop className="w-8 h-8 lg:w-10 lg:h-10 text-[#35DD48]" />
+          <div className="flex flex-col md:flex-row items-center gap-8 lg:gap-12">
+            <div className="w-full md:w-1/2 text-center md:text-left">
+              <Link to="/" className="inline-flex items-center text-[#008440] hover:text-[#35DD48] mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Voltar para página inicial
+              </Link>
+              <div className="w-16 h-16 lg:w-20 lg:h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto md:mx-0 mb-4 lg:mb-6">
+                <Laptop className="w-8 h-8 lg:w-10 lg:h-10 text-[#35DD48]" />
+              </div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">
+                Plataforma de Vendas
+              </h1>
+              <p className="text-lg lg:text-xl text-gray-700 mb-6 lg:mb-8">
+                Tecnologia avançada para otimizar processos de vendas, Força de vendas integrado e automação de marketing.
+              </p>
+              <a 
+                href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                target="_blank"
+                className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
+              >
+                Conhecer Plataforma
+              </a>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6 px-4">
-              Plataforma de Vendas
-            </h1>
-            <p className="text-lg lg:text-xl text-gray-700 mb-6 lg:mb-8 px-4">
-              Tecnologia avançada para otimizar processos de vendas, Força de vendas integrado e automação de marketing.
-            </p>
-            <a 
-              href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-              target="_blank"
-              className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
-            >
-              Conhecer Plataforma
-            </a>
+            <div className="w-full md:w-1/2">
+              <div className="rounded-lg shadow-xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/dashboard-sellou.jpeg" 
+                  alt="Dashboard Sellou - Plataforma de Vendas" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
