@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, MessageCircle, CheckCircle, Users, Target, TrendingUp } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Users, Target, TrendingUp, BarChart, MessageSquare, Presentation, Zap, Award, LineChart, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ConsultoriaEstrategica = () => {
@@ -42,113 +42,204 @@ const ConsultoriaEstrategica = () => {
               <TrendingUp className="w-8 h-8 lg:w-10 lg:h-10 text-[#35DD48]" />
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6 px-4">
-              Consultoria Estratégica
+              Consultoria Comercial Sellou
             </h1>
             <p className="text-lg lg:text-xl text-gray-700 mb-6 lg:mb-8 px-4">
-              Análise profunda do seu negócio com estratégias personalizadas para acelerar vendas e maximizar resultados.
+              Transformamos processos comerciais fragmentados em máquinas de vendas de alta performance.
             </p>
             <a 
-              href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+              href="https://wa.me/5547996353818?text=Olá,%20quero%20transformar%20minha%20área%20comercial" 
               target="_blank"
               className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
             >
-              Solicitar Consultoria
+              Quero transformar minha área comercial
             </a>
           </div>
         </div>
       </section>
 
-      {/* O que inclui */}
+      {/* O que fazemos */}
       <section className="py-12 lg:py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">O que inclui nossa Consultoria</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Diagnóstico completo do processo de vendas</h3>
-                  <p className="text-gray-600">Análise detalhada de todo o funil de vendas, identificando gargalos e oportunidades de melhoria.</p>
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Soluções sob medida para sua operação comercial</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                  <BarChart className="w-6 h-6 text-[#35DD48]" />
                 </div>
+                <h3 className="text-xl font-bold mb-2">Consultoria de Gestão Comercial</h3>
               </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Definição de estratégias personalizadas</h3>
-                  <p className="text-gray-600">Estratégias sob medida para o seu negócio, considerando mercado, público-alvo e objetivos específicos.</p>
+              <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-[#35DD48]" />
                 </div>
+                <h3 className="text-xl font-bold mb-2">Mentoria</h3>
               </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Análise de concorrência e mercado</h3>
-                  <p className="text-gray-600">Estudo aprofundado do seu mercado de atuação e posicionamento competitivo.</p>
+              <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                  <Presentation className="w-6 h-6 text-[#35DD48]" />
                 </div>
+                <h3 className="text-xl font-bold mb-2">Palestras e Treinamentos</h3>
               </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Plano de ação com metas claras</h3>
-                  <p className="text-gray-600">Roadmap detalhado com objetivos mensuráveis e cronograma de implementação.</p>
+              <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                  <Zap className="w-6 h-6 text-[#35DD48]" />
                 </div>
+                <h3 className="text-xl font-bold mb-2">Apoio com Software de Força de Vendas</h3>
               </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Acompanhamento e ajustes contínuos</h3>
-                  <p className="text-gray-600">Suporte contínuo para garantir a implementação efetiva das estratégias definidas.</p>
-                </div>
-              </div>
+            </div>
+            <div className="text-center mt-8">
+              <a 
+                href="https://wa.me/5547996353818?text=Olá,%20quero%20falar%20com%20um%20especialista" 
+                target="_blank"
+                className="bg-white hover:bg-gray-50 text-[#008440] border-2 border-[#008440] hover:border-[#35DD48] px-6 lg:px-8 py-3 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
+              >
+                Fale com um especialista
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Metodologia */}
+      {/* Como atuamos */}
       <section className="py-12 lg:py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Nossa Metodologia</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-[#35DD48]" />
-                </div>
-                <h3 className="text-xl font-bold mb-4">1. Diagnóstico</h3>
-                <p className="text-gray-600">Análise completa da situação atual, identificando pontos fortes e áreas de melhoria.</p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Nosso jeito de transformar resultados</h2>
+            <div className="space-y-4">
+              <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <p className="text-gray-700 text-lg"><strong>Diagnóstico com propósito</strong> – entendemos gargalos e oportunidades antes de agir.</p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-[#35DD48]" />
-                </div>
-                <h3 className="text-xl font-bold mb-4">2. Estratégia</h3>
-                <p className="text-gray-600">Desenvolvimento de estratégias personalizadas baseadas nos resultados do diagnóstico.</p>
+              <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <p className="text-gray-700 text-lg"><strong>Time de alta performance</strong> – reestruturamos equipes com foco em produtividade real.</p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="w-8 h-8 text-[#35DD48]" />
-                </div>
-                <h3 className="text-xl font-bold mb-4">3. Implementação</h3>
-                <p className="text-gray-600">Acompanhamento próximo na execução das estratégias e ajustes conforme necessário.</p>
+              <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <p className="text-gray-700 text-lg"><strong>Liderança que inspira e entrega</strong> – formamos gestores com visão estratégica e domínio de dados.</p>
               </div>
+              <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <p className="text-gray-700 text-lg"><strong>Indicadores que guiam decisões</strong> – KPIs claros, previsibilidade e gestão por dados.</p>
+              </div>
+              <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <p className="text-gray-700 text-lg"><strong>Processos padronizados</strong> – políticas comerciais que organizam e escalam resultados.</p>
+              </div>
+              <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <p className="text-gray-700 text-lg"><strong>Cultura de performance</strong> – incentivos, reconhecimento e planos que sustentam engajamento.</p>
+              </div>
+              <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <p className="text-gray-700 text-lg"><strong>Consultoria com tecnologia</strong> – estratégia unida ao software de força de vendas para escalar performance.</p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <a 
+                href="https://wa.me/5547996353818?text=Olá,%20quero%20uma%20consultoria%20personalizada" 
+                target="_blank"
+                className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
+              >
+                Quero uma consultoria personalizada
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Principais dores */}
+      <section className="py-12 lg:py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Seus desafios são a nossa especialidade</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-[#35DD48] transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900">Falta de estrutura no processo comercial</h3>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-[#35DD48] transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900">Times desalinhados e de baixa performance</h3>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-[#35DD48] transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900">Lideranças sem preparo estratégico</h3>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-[#35DD48] transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900">Ausência de indicadores e previsibilidade</h3>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-[#35DD48] transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900">Dificuldade em gerar e qualificar leads</h3>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-[#35DD48] transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900">Baixa taxa de conversão e retenção de clientes</h3>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-[#35DD48] transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900">Precificação incorreta e margens frágeis</h3>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-[#35DD48] transition-colors">
+                <h3 className="text-lg font-semibold text-gray-900">Concorrência agressiva sem diferenciação</h3>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <a 
+                href="https://wa.me/5547996353818?text=Olá,%20vamos%20resolver%20juntos" 
+                target="_blank"
+                className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
+              >
+                Vamos resolver juntos
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Por que escolher */}
       <section className="py-12 lg:py-16 bg-gradient-to-br from-green-50 via-white to-green-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 px-4">Pronto para Transformar suas Vendas?</h2>
-            <p className="text-lg lg:text-xl text-gray-600 mb-6 lg:mb-8 px-4">Agende sua consultoria estratégica e descubra como podemos acelerar seus resultados</p>
-            <a 
-              href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-              target="_blank"
-              className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
-            >
-              Solicitar Consultoria
-            </a>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Resultados que sustentam crescimento</h2>
+            <div className="space-y-4 mb-10">
+              <div className="flex items-start bg-white p-6 rounded-lg shadow-sm">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <CheckCircle className="w-5 h-5 text-[#35DD48]" />
+                </div>
+                <p className="text-gray-700 text-lg">Transformação real, prática e personalizada</p>
+              </div>
+              <div className="flex items-start bg-white p-6 rounded-lg shadow-sm">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <CheckCircle className="w-5 h-5 text-[#35DD48]" />
+                </div>
+                <p className="text-gray-700 text-lg">Cultura de performance instalada no time</p>
+              </div>
+              <div className="flex items-start bg-white p-6 rounded-lg shadow-sm">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <CheckCircle className="w-5 h-5 text-[#35DD48]" />
+                </div>
+                <p className="text-gray-700 text-lg">Processos claros e padronizados que escalam</p>
+              </div>
+              <div className="flex items-start bg-white p-6 rounded-lg shadow-sm">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <CheckCircle className="w-5 h-5 text-[#35DD48]" />
+                </div>
+                <p className="text-gray-700 text-lg">Consultoria apoiada por tecnologia de vendas</p>
+              </div>
+              <div className="flex items-start bg-white p-6 rounded-lg shadow-sm">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <CheckCircle className="w-5 h-5 text-[#35DD48]" />
+                </div>
+                <p className="text-gray-700 text-lg">Resultados sustentáveis e previsíveis</p>
+              </div>
+            </div>
+            <div className="text-center">
+              <a 
+                href="https://wa.me/5547996353818?text=Olá,%20quero%20acelerar%20minhas%20vendas" 
+                target="_blank"
+                className="bg-[#35DD48] hover:bg-[#008440] text-white px-8 lg:px-10 py-4 lg:py-5 rounded-full text-lg lg:text-xl font-bold transform hover:scale-105 transition-all duration-300 inline-block shadow-lg hover:shadow-xl"
+              >
+                Entre em contato e acelere suas vendas
+              </a>
+            </div>
           </div>
         </div>
       </section>
