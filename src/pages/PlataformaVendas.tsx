@@ -1,6 +1,13 @@
 import React from 'react';
 import { ArrowLeft, BarChart3, CheckCircle, Database, Zap, Users2, Laptop } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const PlataformaVendas = () => {
   return (
@@ -111,6 +118,190 @@ const PlataformaVendas = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Carrossel de Vídeos */}
+      <section className="py-12 lg:py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-4 px-4">Plataforma em Ação</h2>
+            <p className="text-center text-gray-600 mb-8 lg:mb-12 px-4">Veja como nossa plataforma funciona na prática</p>
+            
+            <Carousel className="w-full">
+              <CarouselContent>
+                {/* Slide 1: Login até empresa */}
+                <CarouselItem>
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="aspect-video bg-black">
+                      <video
+                        className="w-full h-full object-contain"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      >
+                        <source src="/lovable-uploads/login-empresa.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div className="p-6 lg:p-8">
+                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Acesso rápido e seguro para toda a equipe</h3>
+                      <p className="text-gray-600 mb-6">Entre facilmente na plataforma e comece a vender em segundos.</p>
+                      <a 
+                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                        target="_blank"
+                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                      >
+                        Quero usar a plataforma
+                      </a>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Slide 2: Criação de produto */}
+                <CarouselItem>
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="aspect-video bg-black">
+                      <video
+                        className="w-full h-full object-contain"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      >
+                        <source src="/lovable-uploads/criacao-produto.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div className="p-6 lg:p-8">
+                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Cadastre produtos em poucos cliques</h3>
+                      <p className="text-gray-600 mb-6">Simples, rápido e prático, sem complicação.</p>
+                      <a 
+                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                        target="_blank"
+                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                      >
+                        Quero usar a plataforma
+                      </a>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Slide 3: Dashboard */}
+                <CarouselItem>
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="aspect-video bg-black">
+                      <video
+                        className="w-full h-full object-contain"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      >
+                        <source src="/lovable-uploads/dashboard.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div className="p-6 lg:p-8">
+                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Inteligência comercial em tempo real</h3>
+                      <p className="text-gray-600 mb-6">Acompanhe métricas, indicadores e resultados sem esforço.</p>
+                      <a 
+                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                        target="_blank"
+                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                      >
+                        Quero usar a plataforma
+                      </a>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Slide 4: Tela Clientes */}
+                <CarouselItem>
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="aspect-video bg-black">
+                      <video
+                        className="w-full h-full object-contain"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      >
+                        <source src="/lovable-uploads/tela-clientes.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div className="p-6 lg:p-8">
+                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Gestão completa de clientes</h3>
+                      <p className="text-gray-600 mb-6">Histórico, pedidos e informações organizadas em um só lugar.</p>
+                      <a 
+                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                        target="_blank"
+                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                      >
+                        Quero usar a plataforma
+                      </a>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Slide 5: Pedidos */}
+                <CarouselItem>
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="aspect-video bg-black">
+                      <video
+                        className="w-full h-full object-contain"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      >
+                        <source src="/lovable-uploads/pedidos.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div className="p-6 lg:p-8">
+                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Pedidos digitais ágeis e sem erros</h3>
+                      <p className="text-gray-600 mb-6">Reduza retrabalho e ganhe produtividade no fechamento.</p>
+                      <a 
+                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                        target="_blank"
+                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                      >
+                        Quero usar a plataforma
+                      </a>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Slide 6: Gerenciamento */}
+                <CarouselItem>
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="aspect-video bg-black">
+                      <video
+                        className="w-full h-full object-contain"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      >
+                        <source src="/lovable-uploads/gerenciamento.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div className="p-6 lg:p-8">
+                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Controle total da operação</h3>
+                      <p className="text-gray-600 mb-6">Processos, margens e resultados monitorados em tempo real.</p>
+                      <a 
+                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                        target="_blank"
+                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                      >
+                        Quero usar a plataforma
+                      </a>
+                    </div>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex" />
+              <CarouselNext className="hidden md:flex" />
+            </Carousel>
           </div>
         </div>
       </section>
