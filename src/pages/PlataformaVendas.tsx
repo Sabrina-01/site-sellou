@@ -80,41 +80,41 @@ const PlataformaVendas = () => {
       <section className="py-12 lg:py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Recursos da Plataforma</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Recursos da Plataforma</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
               <div className="flex items-start">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Força de vendas completo e intuitivo</h3>
-                  <p className="text-gray-600">Sistema completo de gestão de relacionamento com clientes, fácil de usar e configurar.</p>
+                  <h3 className="text-lg font-semibold mb-2">Gestão de Clientes</h3>
+                  <p className="text-gray-600">Cadastre, acompanhe e organize toda a base de clientes em um só lugar, com histórico de compras e dados completos.</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Automação de marketing digital</h3>
-                  <p className="text-gray-600">Automatize campanhas, e-mails e follow-ups para nutrir leads e acelerar conversões.</p>
+                  <h3 className="text-lg font-semibold mb-2">Gestão de Produtos</h3>
+                  <p className="text-gray-600">Crie e edite facilmente seu catálogo de produtos, incluindo preços, descrições, imagens e políticas comerciais.</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Gestão de pipeline de vendas</h3>
-                  <p className="text-gray-600">Visualize e gerencie todo o processo de vendas com funil interativo e customizável.</p>
+                  <h3 className="text-lg font-semibold mb-2">Gestão de Pedidos</h3>
+                  <p className="text-gray-600">Gere pedidos de forma rápida e prática, com cálculo automático de valores, descontos e condições comerciais.</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Relatórios e dashboards em tempo real</h3>
-                  <p className="text-gray-600">Acompanhe métricas importantes com dashboards intuitivos e relatórios personalizáveis.</p>
+                  <h3 className="text-lg font-semibold mb-2">Dashboard de Vendas</h3>
+                  <p className="text-gray-600">Visualize indicadores e métricas em tempo real, com relatórios claros sobre desempenho, faturamento e conversão.</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Integração com principais ferramentas</h3>
-                  <p className="text-gray-600">Conecte facilmente com WhatsApp, e-mail, redes sociais e outras ferramentas essenciais.</p>
+                  <h3 className="text-lg font-semibold mb-2">Controle de Representantes</h3>
+                  <p className="text-gray-600">Acompanhe a performance da sua equipe comercial, organize rotas, territórios e políticas de comissionamento.</p>
                 </div>
               </div>
             </div>
@@ -311,27 +311,41 @@ const PlataformaVendas = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Principais Funcionalidades</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Database className="w-8 h-8 text-[#35DD48]" />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+              <div className="flex items-start">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Criação e Gestão de Produtos</h3>
+                  <p className="text-gray-600">Estruture seu catálogo digital e mantenha sempre atualizado.</p>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Gestão de Leads</h3>
-                <p className="text-gray-600">Capture, organize e qualifique leads automaticamente para maximizar conversões.</p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Zap className="w-8 h-8 text-[#35DD48]" />
+              <div className="flex items-start">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Cadastro e Gestão de Clientes</h3>
+                  <p className="text-gray-600">Informações organizadas para fortalecer o relacionamento e aumentar a recompra.</p>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Automação Inteligente</h3>
-                <p className="text-gray-600">Automatize tarefas repetitivas e processos complexos para focar no que realmente importa.</p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BarChart3 className="w-8 h-8 text-[#35DD48]" />
+              <div className="flex items-start">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Emissão e Gestão de Pedidos</h3>
+                  <p className="text-gray-600">Pedidos digitais ágeis, sem erros e com integração direta ao fluxo de vendas.</p>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Analytics Avançado</h3>
-                <p className="text-gray-600">Tenha insights profundos sobre performance de vendas e comportamento de clientes.</p>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Dashboard Inteligente</h3>
+                  <p className="text-gray-600">Acompanhe resultados em tempo real com dados estratégicos para decisões rápidas.</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Gestão Comercial Integrada</h3>
+                  <p className="text-gray-600">Controle de margens, políticas comerciais, representantes e resultados em uma única plataforma.</p>
+                </div>
               </div>
             </div>
           </div>
