@@ -2,12 +2,11 @@ import React from 'react';
 import { ArrowLeft, BarChart3, CheckCircle, Database, Zap, Users2, Laptop } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
 
 const PlataformaVendas = () => {
   return (
@@ -122,186 +121,311 @@ const PlataformaVendas = () => {
         </div>
       </section>
 
-      {/* Carrossel de Vídeos */}
+      {/* Vídeos da Plataforma */}
       <section className="py-12 lg:py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-4 px-4">Plataforma em Ação</h2>
-            <p className="text-center text-gray-600 mb-8 lg:mb-12 px-4">Veja como nossa plataforma funciona na prática</p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-4 px-4">Veja a Plataforma Sellou em ação</h2>
+            <p className="text-center text-gray-600 mb-8 lg:mb-12 px-4">Descubra como cada funcionalidade otimiza sua operação comercial</p>
             
-            <Carousel className="w-full">
-              <CarouselContent>
-                {/* Slide 1: Pedidos */}
-                <CarouselItem>
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div className="aspect-video bg-black">
-                      <video
-                        className="w-full h-full object-contain"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                      >
-                        <source src="/lovable-uploads/pedidos.mp4" type="video/mp4" />
-                      </video>
-                    </div>
-                    <div className="p-6 lg:p-8">
-                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Pedidos digitais ágeis e sem erros</h3>
-                      <p className="text-gray-600 mb-6">Reduza retrabalho e ganhe produtividade no fechamento.</p>
-                      <a 
-                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                        target="_blank"
-                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                      >
-                        Quero usar a plataforma
-                      </a>
-                    </div>
-                  </div>
-                </CarouselItem>
+            <Tabs defaultValue="pedidos" className="w-full">
+              <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 h-auto bg-transparent">
+                <TabsTrigger 
+                  value="pedidos" 
+                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
+                >
+                  Pedidos
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="clientes" 
+                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
+                >
+                  Clientes
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="produto" 
+                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
+                >
+                  Produtos
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="gerenciamento" 
+                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
+                >
+                  Gerenciamento
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="dashboard" 
+                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
+                >
+                  Dashboard
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="login" 
+                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
+                >
+                  Login
+                </TabsTrigger>
+              </TabsList>
 
-                {/* Slide 2: Tela Clientes */}
-                <CarouselItem>
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div className="aspect-video bg-black">
-                      <video
-                        className="w-full h-full object-contain"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                      >
-                        <source src="/lovable-uploads/tela-clientes.mp4" type="video/mp4" />
-                      </video>
-                    </div>
-                    <div className="p-6 lg:p-8">
-                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Gestão completa de clientes</h3>
-                      <p className="text-gray-600 mb-6">Histórico, pedidos e informações organizadas em um só lugar.</p>
-                      <a 
-                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                        target="_blank"
-                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                      >
-                        Quero usar a plataforma
-                      </a>
-                    </div>
+              {/* Pedidos */}
+              <TabsContent value="pedidos" className="mt-6">
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      aria-label="Fechamento sem fricção"
+                    >
+                      <source src="/lovable-uploads/pedidos.mp4" type="video/mp4" />
+                    </video>
                   </div>
-                </CarouselItem>
+                  <div className="p-6 lg:p-8">
+                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Fechamento sem fricção</h3>
+                    <p className="text-gray-600 mb-4">Emita pedidos com rapidez e clareza. Menos retrabalho, mais produtividade.</p>
+                    <ul className="space-y-2 mb-6">
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Fluxo simples do carrinho ao fechamento</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Revisão rápida antes de finalizar</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Redução de erros e tempo de atendimento</span>
+                      </li>
+                    </ul>
+                    <a 
+                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                      target="_blank"
+                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    >
+                      Quero usar essa funcionalidade
+                    </a>
+                  </div>
+                </div>
+              </TabsContent>
 
-                {/* Slide 3: Criação de produto */}
-                <CarouselItem>
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div className="aspect-video bg-black">
-                      <video
-                        className="w-full h-full object-contain"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                      >
-                        <source src="/lovable-uploads/criacao-produto.mp4" type="video/mp4" />
-                      </video>
-                    </div>
-                    <div className="p-6 lg:p-8">
-                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Cadastre produtos em poucos cliques</h3>
-                      <p className="text-gray-600 mb-6">Simples, rápido e prático, sem complicação.</p>
-                      <a 
-                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                        target="_blank"
-                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                      >
-                        Quero usar a plataforma
-                      </a>
-                    </div>
+              {/* Clientes */}
+              <TabsContent value="clientes" className="mt-6">
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      aria-label="Histórico que faz vender"
+                    >
+                      <source src="/lovable-uploads/tela-clientes.mp4" type="video/mp4" />
+                    </video>
                   </div>
-                </CarouselItem>
+                  <div className="p-6 lg:p-8">
+                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Histórico que faz vender</h3>
+                    <p className="text-gray-600 mb-4">Informações completas e organizadas para construir relacionamentos duradouros e aumentar a recompra.</p>
+                    <ul className="space-y-2 mb-6">
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Histórico de pedidos e atendimentos</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Dados sempre atualizados</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Base sólida para pós-venda e reativação</span>
+                      </li>
+                    </ul>
+                    <a 
+                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                      target="_blank"
+                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    >
+                      Quero usar essa funcionalidade
+                    </a>
+                  </div>
+                </div>
+              </TabsContent>
 
-                {/* Slide 4: Gerenciamento */}
-                <CarouselItem>
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div className="aspect-video bg-black">
-                      <video
-                        className="w-full h-full object-contain"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                      >
-                        <source src="/lovable-uploads/gerenciamento.mp4" type="video/mp4" />
-                      </video>
-                    </div>
-                    <div className="p-6 lg:p-8">
-                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Controle total da operação</h3>
-                      <p className="text-gray-600 mb-6">Processos, margens e resultados monitorados em tempo real.</p>
-                      <a 
-                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                        target="_blank"
-                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                      >
-                        Quero usar a plataforma
-                      </a>
-                    </div>
+              {/* Produto */}
+              <TabsContent value="produto" className="mt-6">
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      aria-label="Catálogo padronizado, pedido sem erro"
+                    >
+                      <source src="/lovable-uploads/criacao-produto.mp4" type="video/mp4" />
+                    </video>
                   </div>
-                </CarouselItem>
+                  <div className="p-6 lg:p-8">
+                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Catálogo padronizado, pedido sem erro</h3>
+                    <p className="text-gray-600 mb-4">Cadastre produtos rápido e mantenha informações consistentes para reduzir erros no pedido.</p>
+                    <ul className="space-y-2 mb-6">
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Campos essenciais, sem complicação</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Atualizações rápidas no catálogo</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Informações uniformes em todos os pedidos</span>
+                      </li>
+                    </ul>
+                    <a 
+                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                      target="_blank"
+                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    >
+                      Quero usar essa funcionalidade
+                    </a>
+                  </div>
+                </div>
+              </TabsContent>
 
-                {/* Slide 5: Dashboard */}
-                <CarouselItem>
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div className="aspect-video bg-black">
-                      <video
-                        className="w-full h-full object-contain"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                      >
-                        <source src="/lovable-uploads/dashboard.mp4" type="video/mp4" />
-                      </video>
-                    </div>
-                    <div className="p-6 lg:p-8">
-                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Inteligência comercial em tempo real</h3>
-                      <p className="text-gray-600 mb-6">Acompanhe métricas, indicadores e resultados sem esforço.</p>
-                      <a 
-                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                        target="_blank"
-                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                      >
-                        Quero usar a plataforma
-                      </a>
-                    </div>
+              {/* Gerenciamento */}
+              <TabsContent value="gerenciamento" className="mt-6">
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      aria-label="Controle do que importa"
+                    >
+                      <source src="/lovable-uploads/gerenciamento.mp4" type="video/mp4" />
+                    </video>
                   </div>
-                </CarouselItem>
+                  <div className="p-6 lg:p-8">
+                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Controle do que importa</h3>
+                    <p className="text-gray-600 mb-4">Acompanhe toda a operação comercial com clareza, previsibilidade e foco no resultado.</p>
+                    <ul className="space-y-2 mb-6">
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Visão do andamento operacional</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Acompanhamento dos pedidos ativos</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Rotina de gestão mais previsível e produtiva</span>
+                      </li>
+                    </ul>
+                    <a 
+                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                      target="_blank"
+                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    >
+                      Quero usar essa funcionalidade
+                    </a>
+                  </div>
+                </div>
+              </TabsContent>
 
-                {/* Slide 6: Login até empresa */}
-                <CarouselItem>
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div className="aspect-video bg-black">
-                      <video
-                        className="w-full h-full object-contain"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                      >
-                        <source src="/lovable-uploads/login-empresa.mp4" type="video/mp4" />
-                      </video>
-                    </div>
-                    <div className="p-6 lg:p-8">
-                      <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Acesso rápido e seguro para toda a equipe</h3>
-                      <p className="text-gray-600 mb-6">Entre facilmente na plataforma e comece a vender em segundos.</p>
-                      <a 
-                        href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                        target="_blank"
-                        className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                      >
-                        Quero usar a plataforma
-                      </a>
-                    </div>
+              {/* Dashboard */}
+              <TabsContent value="dashboard" className="mt-6">
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      aria-label="Decisão em tempo real"
+                    >
+                      <source src="/lovable-uploads/dashboard.mp4" type="video/mp4" />
+                    </video>
                   </div>
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious className="hidden md:flex" />
-              <CarouselNext className="hidden md:flex" />
-            </Carousel>
+                  <div className="p-6 lg:p-8">
+                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Decisão em tempo real</h3>
+                    <p className="text-gray-600 mb-4">KPIs à vista para agir rápido. Priorize clientes e oportunidades sem depender de planilhas.</p>
+                    <ul className="space-y-2 mb-6">
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Indicadores visuais e fáceis de entender</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Visão clara da performance geral</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Respostas rápidas para correção de rota</span>
+                      </li>
+                    </ul>
+                    <a 
+                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                      target="_blank"
+                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    >
+                      Quero usar essa funcionalidade
+                    </a>
+                  </div>
+                </div>
+              </TabsContent>
+
+              {/* Login */}
+              <TabsContent value="login" className="mt-6">
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      aria-label="Acesso em 1 clique"
+                    >
+                      <source src="/lovable-uploads/login-empresa.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div className="p-6 lg:p-8">
+                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Acesso em 1 clique</h3>
+                    <p className="text-gray-600 mb-4">Entre e comece a vender em segundos. Menos atrito, mais velocidade para o time.</p>
+                    <ul className="space-y-2 mb-6">
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Onboarding simples e intuitivo</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Acesso rápido ao dashboard inicial</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700">Zero distração: foco total na operação</span>
+                      </li>
+                    </ul>
+                    <a 
+                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
+                      target="_blank"
+                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    >
+                      Quero usar essa funcionalidade
+                    </a>
+                  </div>
+                </div>
+              </TabsContent>
+            </Tabs>
           </div>
         </div>
       </section>
