@@ -82,29 +82,40 @@ const PlataformaVendas = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#35DD48] to-[#008440] py-16 lg:py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Link to="/" className="inline-flex items-center text-white/90 hover:text-white mb-6 transition-colors text-sm lg:text-base">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Voltar para página inicial
-            </Link>
-            <div className="w-20 h-20 lg:w-24 lg:h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6">
-              <Laptop className="w-10 h-10 lg:w-12 lg:h-12 text-white" />
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <Link to="/" className="inline-flex items-center text-white/90 hover:text-white mb-6 transition-colors text-sm lg:text-base">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Voltar para página inicial
+              </Link>
+              <div className="w-20 h-20 lg:w-24 lg:h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-6">
+                <Laptop className="w-10 h-10 lg:w-12 lg:h-12 text-white" />
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                Plataforma Sellou
+              </h1>
+              <p className="text-xl lg:text-2xl text-white/95 mb-4 font-medium">
+                A tecnologia que transforma sua operação comercial em uma máquina de performance previsível.
+              </p>
+              <p className="text-lg lg:text-xl text-white/90 mb-8">
+                Da prospecção ao fechamento, tudo em um só lugar: simples, rápido e conectado.
+              </p>
+              <a 
+                href="#videos"
+                className="inline-block bg-white text-[#008440] hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl"
+              >
+                Ver a plataforma em ação
+              </a>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Plataforma Sellou
-            </h1>
-            <p className="text-xl lg:text-2xl text-white/95 mb-4 font-medium">
-              A tecnologia que transforma sua operação comercial em uma máquina de performance previsível.
-            </p>
-            <p className="text-lg lg:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-              Da prospecção ao fechamento, tudo em um só lugar: simples, rápido e conectado.
-            </p>
-            <a 
-              href="#videos"
-              className="inline-block bg-white text-[#008440] hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl"
-            >
-              Ver a plataforma em ação
-            </a>
+            <div className="w-full lg:w-1/2">
+              <div className="rounded-xl shadow-2xl overflow-hidden border-4 border-white/20">
+                <img 
+                  src="/lovable-uploads/dashboard-sellou.jpeg" 
+                  alt="Dashboard Sellou - Plataforma de Vendas" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
