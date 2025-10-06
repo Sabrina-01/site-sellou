@@ -1,14 +1,57 @@
-import React from 'react';
-import { ArrowLeft, BarChart3, CheckCircle, Database, Zap, Users2, Laptop } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowLeft, CheckCircle, Laptop, Target, Zap, TrendingUp, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
 
 const PlataformaVendas = () => {
+  const [activeVideo, setActiveVideo] = useState('login');
+
+  const videos = [
+    {
+      id: 'login',
+      title: 'Acesso imediato e sem fricção',
+      subtitle: 'Login até empresa',
+      description: 'Entre e comece a vender em segundos. Simples, rápido e intuitivo.',
+      video: '/lovable-uploads/login-empresa.mp4'
+    },
+    {
+      id: 'produto',
+      title: 'Catálogo organizado, pedido sem erro',
+      subtitle: 'Criação de produto',
+      description: 'Cadastre e atualize produtos facilmente, mantendo informações padronizadas.',
+      video: '/lovable-uploads/criacao-produto.mp4'
+    },
+    {
+      id: 'dashboard',
+      title: 'Decisão rápida com dados reais',
+      subtitle: 'Dashboard',
+      description: 'Veja os números que importam e aja com confiança.',
+      video: '/lovable-uploads/dashboard.mp4'
+    },
+    {
+      id: 'clientes',
+      title: 'Histórico completo de cada cliente',
+      subtitle: 'Tela Clientes',
+      description: 'Relacionamento e recompra simplificados, tudo em um só painel.',
+      video: '/lovable-uploads/tela-clientes.mp4'
+    },
+    {
+      id: 'pedidos',
+      title: 'Fechamento em segundos',
+      subtitle: 'Pedidos',
+      description: 'Gere pedidos rápidos e precisos, do carrinho à confirmação.',
+      video: '/lovable-uploads/pedidos.mp4'
+    },
+    {
+      id: 'gerenciamento',
+      title: 'Controle total da operação',
+      subtitle: 'Gerenciamento',
+      description: 'Acompanhe tudo em tempo real — margens, resultados e desempenho da equipe.',
+      video: '/lovable-uploads/gerenciamento.mp4'
+    }
+  ];
+
+  const activeVideoData = videos.find(v => v.id === activeVideo);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -37,519 +80,270 @@ const PlataformaVendas = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-green-50 py-12 lg:py-20">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center gap-8 lg:gap-12">
-            <div className="w-full md:w-1/2 text-center md:text-left">
-              <Link to="/" className="inline-flex items-center text-[#008440] hover:text-[#35DD48] mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Voltar para página inicial
-              </Link>
-              <div className="w-16 h-16 lg:w-20 lg:h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto md:mx-0 mb-4 lg:mb-6">
-                <Laptop className="w-8 h-8 lg:w-10 lg:h-10 text-[#35DD48]" />
-              </div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6">
-                Plataforma de Vendas
-              </h1>
-              <p className="text-lg lg:text-xl text-gray-700 mb-6 lg:mb-8">
-                Tecnologia avançada para otimizar processos de vendas, Força de vendas integrado e automação de marketing.
-              </p>
-              <a 
-                href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                target="_blank"
-                className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
-              >
-                Conhecer Plataforma
-              </a>
-            </div>
-            <div className="w-full md:w-1/2">
-              <div className="rounded-lg shadow-xl overflow-hidden">
-                <img 
-                  src="/lovable-uploads/dashboard-sellou.jpeg" 
-                  alt="Dashboard Sellou - Plataforma de Vendas" 
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Recursos da Plataforma */}
-      <section className="py-12 lg:py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Recursos da Plataforma</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Gestão de Clientes</h3>
-                  <p className="text-gray-600">Cadastre, acompanhe e organize toda a base de clientes em um só lugar, com histórico de compras e dados completos.</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Gestão de Produtos</h3>
-                  <p className="text-gray-600">Crie e edite facilmente seu catálogo de produtos, incluindo preços, descrições, imagens e políticas comerciais.</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Gestão de Pedidos</h3>
-                  <p className="text-gray-600">Gere pedidos de forma rápida e prática, com cálculo automático de valores, descontos e condições comerciais.</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Dashboard de Vendas</h3>
-                  <p className="text-gray-600">Visualize indicadores e métricas em tempo real, com relatórios claros sobre desempenho, faturamento e conversão.</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Controle de Representantes</h3>
-                  <p className="text-gray-600">Acompanhe a performance da sua equipe comercial, organize rotas, territórios e políticas de comissionamento.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Vídeos da Plataforma */}
-      <section className="py-12 lg:py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-4 px-4">Veja a Plataforma Sellou em ação</h2>
-            <p className="text-center text-gray-600 mb-8 lg:mb-12 px-4">Descubra como cada funcionalidade otimiza sua operação comercial</p>
-            
-            <Tabs defaultValue="pedidos" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 h-auto bg-transparent">
-                <TabsTrigger 
-                  value="pedidos" 
-                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
-                >
-                  Pedidos
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="clientes" 
-                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
-                >
-                  Clientes
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="produto" 
-                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
-                >
-                  Produtos
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="gerenciamento" 
-                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
-                >
-                  Gerenciamento
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="dashboard" 
-                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
-                >
-                  Dashboard
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="login" 
-                  className="data-[state=active]:bg-[#35DD48] data-[state=active]:text-white border border-[#35DD48] text-gray-700 hover:bg-[#008440] hover:text-white transition-colors"
-                >
-                  Login
-                </TabsTrigger>
-              </TabsList>
-
-              {/* Pedidos */}
-              <TabsContent value="pedidos" className="mt-6">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
-                    <video
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      aria-label="Fechamento sem fricção"
-                    >
-                      <source src="/lovable-uploads/pedidos.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div className="p-6 lg:p-8">
-                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Fechamento sem fricção</h3>
-                    <p className="text-gray-600 mb-4">Emita pedidos com rapidez e clareza. Menos retrabalho, mais produtividade.</p>
-                    <ul className="space-y-2 mb-6">
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Fluxo simples do carrinho ao fechamento</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Revisão rápida antes de finalizar</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Redução de erros e tempo de atendimento</span>
-                      </li>
-                    </ul>
-                    <a 
-                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                      target="_blank"
-                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                    >
-                      Quero usar essa funcionalidade
-                    </a>
-                  </div>
-                </div>
-              </TabsContent>
-
-              {/* Clientes */}
-              <TabsContent value="clientes" className="mt-6">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
-                    <video
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      aria-label="Histórico que faz vender"
-                    >
-                      <source src="/lovable-uploads/tela-clientes.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div className="p-6 lg:p-8">
-                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Histórico que faz vender</h3>
-                    <p className="text-gray-600 mb-4">Informações completas e organizadas para construir relacionamentos duradouros e aumentar a recompra.</p>
-                    <ul className="space-y-2 mb-6">
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Histórico de pedidos e atendimentos</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Dados sempre atualizados</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Base sólida para pós-venda e reativação</span>
-                      </li>
-                    </ul>
-                    <a 
-                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                      target="_blank"
-                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                    >
-                      Quero usar essa funcionalidade
-                    </a>
-                  </div>
-                </div>
-              </TabsContent>
-
-              {/* Produto */}
-              <TabsContent value="produto" className="mt-6">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
-                    <video
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      aria-label="Catálogo padronizado, pedido sem erro"
-                    >
-                      <source src="/lovable-uploads/criacao-produto.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div className="p-6 lg:p-8">
-                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Catálogo padronizado, pedido sem erro</h3>
-                    <p className="text-gray-600 mb-4">Cadastre produtos rápido e mantenha informações consistentes para reduzir erros no pedido.</p>
-                    <ul className="space-y-2 mb-6">
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Campos essenciais, sem complicação</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Atualizações rápidas no catálogo</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Informações uniformes em todos os pedidos</span>
-                      </li>
-                    </ul>
-                    <a 
-                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                      target="_blank"
-                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                    >
-                      Quero usar essa funcionalidade
-                    </a>
-                  </div>
-                </div>
-              </TabsContent>
-
-              {/* Gerenciamento */}
-              <TabsContent value="gerenciamento" className="mt-6">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
-                    <video
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      aria-label="Controle do que importa"
-                    >
-                      <source src="/lovable-uploads/gerenciamento.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div className="p-6 lg:p-8">
-                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Controle do que importa</h3>
-                    <p className="text-gray-600 mb-4">Acompanhe toda a operação comercial com clareza, previsibilidade e foco no resultado.</p>
-                    <ul className="space-y-2 mb-6">
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Visão do andamento operacional</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Acompanhamento dos pedidos ativos</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Rotina de gestão mais previsível e produtiva</span>
-                      </li>
-                    </ul>
-                    <a 
-                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                      target="_blank"
-                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                    >
-                      Quero usar essa funcionalidade
-                    </a>
-                  </div>
-                </div>
-              </TabsContent>
-
-              {/* Dashboard */}
-              <TabsContent value="dashboard" className="mt-6">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
-                    <video
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      aria-label="Decisão em tempo real"
-                    >
-                      <source src="/lovable-uploads/dashboard.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div className="p-6 lg:p-8">
-                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Decisão em tempo real</h3>
-                    <p className="text-gray-600 mb-4">KPIs à vista para agir rápido. Priorize clientes e oportunidades sem depender de planilhas.</p>
-                    <ul className="space-y-2 mb-6">
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Indicadores visuais e fáceis de entender</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Visão clara da performance geral</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Respostas rápidas para correção de rota</span>
-                      </li>
-                    </ul>
-                    <a 
-                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                      target="_blank"
-                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                    >
-                      Quero usar essa funcionalidade
-                    </a>
-                  </div>
-                </div>
-              </TabsContent>
-
-              {/* Login */}
-              <TabsContent value="login" className="mt-6">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="relative w-full" style={{ paddingTop: '56.25%', backgroundColor: '#000' }}>
-                    <video
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      aria-label="Acesso em 1 clique"
-                    >
-                      <source src="/lovable-uploads/login-empresa.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div className="p-6 lg:p-8">
-                    <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-900">Acesso em 1 clique</h3>
-                    <p className="text-gray-600 mb-4">Entre e comece a vender em segundos. Menos atrito, mais velocidade para o time.</p>
-                    <ul className="space-y-2 mb-6">
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Onboarding simples e intuitivo</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Acesso rápido ao dashboard inicial</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-[#35DD48] mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Zero distração: foco total na operação</span>
-                      </li>
-                    </ul>
-                    <a 
-                      href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-                      target="_blank"
-                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-                    >
-                      Quero usar essa funcionalidade
-                    </a>
-                  </div>
-                </div>
-              </TabsContent>
-            </Tabs>
-          </div>
-        </div>
-      </section>
-
-      {/* Funcionalidades */}
-      <section className="py-12 lg:py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Principais Funcionalidades</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Criação e Gestão de Produtos</h3>
-                  <p className="text-gray-600">Estruture seu catálogo digital e mantenha sempre atualizado.</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Cadastro e Gestão de Clientes</h3>
-                  <p className="text-gray-600">Informações organizadas para fortalecer o relacionamento e aumentar a recompra.</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Emissão e Gestão de Pedidos</h3>
-                  <p className="text-gray-600">Pedidos digitais ágeis, sem erros e com integração direta ao fluxo de vendas.</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Dashboard Inteligente</h3>
-                  <p className="text-gray-600">Acompanhe resultados em tempo real com dados estratégicos para decisões rápidas.</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Gestão Comercial Integrada</h3>
-                  <p className="text-gray-600">Controle de margens, políticas comerciais, representantes e resultados em uma única plataforma.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#35DD48] to-[#008440] py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 px-4">Revolucione seu Processo de Vendas</h2>
-            <p className="text-lg lg:text-xl text-gray-600 mb-6 lg:mb-8 px-4">Descubra como nossa plataforma pode transformar seus resultados comerciais</p>
+            <Link to="/" className="inline-flex items-center text-white/90 hover:text-white mb-6 transition-colors text-sm lg:text-base">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Voltar para página inicial
+            </Link>
+            <div className="w-20 h-20 lg:w-24 lg:h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6">
+              <Laptop className="w-10 h-10 lg:w-12 lg:h-12 text-white" />
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              Plataforma Sellou
+            </h1>
+            <p className="text-xl lg:text-2xl text-white/95 mb-4 font-medium">
+              A tecnologia que transforma sua operação comercial em uma máquina de performance previsível.
+            </p>
+            <p className="text-lg lg:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+              Da prospecção ao fechamento, tudo em um só lugar: simples, rápido e conectado.
+            </p>
             <a 
-              href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
-              target="_blank"
-              className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
+              href="#videos"
+              className="inline-block bg-white text-[#008440] hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl"
             >
-              Solicitar Demonstração
+              Ver a plataforma em ação
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Por que usar a plataforma Sellou */}
+      <section className="py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12 lg:mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Controle total, zero complicação.
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Pensada para quem vende, gerencia e quer crescer com clareza.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+              <div className="flex items-start bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-[#35DD48] rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <Target className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Unifica processos</h3>
+                  <p className="text-gray-600">Tudo — clientes, produtos, pedidos e representantes — num só painel.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-[#35DD48] rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Dá velocidade</h3>
+                  <p className="text-gray-600">Menos cliques, mais fechamento.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-[#35DD48] rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <TrendingUp className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Gera previsibilidade</h3>
+                  <p className="text-gray-600">Dashboards e relatórios em tempo real.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-[#35DD48] rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Aumenta engajamento</h3>
+                  <p className="text-gray-600">Equipe conectada, produtiva e orientada a resultados.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <a 
+                href="https://wa.me/5547996353818?text=Olá,%20quero%20conhecer%20melhor%20a%20Plataforma%20Sellou." 
+                target="_blank"
+                className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+              >
+                Quero conhecer melhor
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Veja a plataforma em ação */}
+      <section id="videos" className="py-16 lg:py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Veja como a Sellou simplifica sua rotina
+              </h2>
+              <p className="text-xl text-gray-600">
+                Clique em uma função abaixo para assistir em ação.
+              </p>
+            </div>
+
+            {/* Tabs/Accordion for videos */}
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden">
+              {/* Tabs - Desktop */}
+              <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-6 border-b border-gray-200">
+                {videos.map((video) => (
+                  <button
+                    key={video.id}
+                    onClick={() => setActiveVideo(video.id)}
+                    className={`px-4 py-4 text-sm font-medium transition-all ${
+                      activeVideo === video.id
+                        ? 'bg-[#35DD48] text-white'
+                        : 'bg-white text-gray-700 hover:bg-[#008440] hover:text-white border-b-2 border-[#35DD48]'
+                    }`}
+                  >
+                    {video.subtitle}
+                  </button>
+                ))}
+              </div>
+
+              {/* Mobile Accordion */}
+              <div className="md:hidden">
+                {videos.map((video) => (
+                  <div key={video.id} className="border-b border-gray-200">
+                    <button
+                      onClick={() => setActiveVideo(video.id === activeVideo ? '' : video.id)}
+                      className={`w-full px-4 py-4 text-left font-medium transition-all ${
+                        activeVideo === video.id
+                          ? 'bg-[#35DD48] text-white'
+                          : 'bg-white text-gray-700 hover:bg-gray-50'
+                      }`}
+                    >
+                      {video.subtitle}
+                    </button>
+                    {activeVideo === video.id && (
+                      <div className="animate-fade-in">
+                        <div className="relative w-full bg-black" style={{ paddingTop: '56.25%' }}>
+                          <video
+                            key={video.id}
+                            className="absolute top-0 left-0 w-full h-full"
+                            style={{ objectFit: 'contain' }}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            aria-label={video.title}
+                          >
+                            <source src={video.video} type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold mb-2 text-gray-900">{video.title}</h3>
+                          <p className="text-gray-600 mb-4">{video.description}</p>
+                          <a 
+                            href={`https://wa.me/5547996353818?text=Olá,%20quero%20usar%20a%20função%20de%20${video.subtitle}%20da%20Plataforma%20Sellou.`}
+                            target="_blank"
+                            className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                          >
+                            Quero usar essa função
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Video Content - Desktop */}
+              {activeVideoData && (
+                <div className="hidden md:block animate-fade-in">
+                  <div className="relative w-full bg-black" style={{ paddingTop: '56.25%' }}>
+                    <video
+                      key={activeVideoData.id}
+                      className="absolute top-0 left-0 w-full h-full"
+                      style={{ objectFit: 'contain' }}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      aria-label={activeVideoData.title}
+                    >
+                      <source src={activeVideoData.video} type="video/mp4" />
+                    </video>
+                  </div>
+                  <div className="p-8">
+                    <h3 className="text-2xl font-bold mb-3 text-gray-900">{activeVideoData.title}</h3>
+                    <p className="text-gray-600 mb-6 text-lg">{activeVideoData.description}</p>
+                    <a 
+                      href={`https://wa.me/5547996353818?text=Olá,%20quero%20usar%20a%20função%20de%20${activeVideoData.subtitle}%20da%20Plataforma%20Sellou.`}
+                      target="_blank"
+                      className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-8 py-4 rounded-lg font-semibold transition-colors"
+                    >
+                      Quero usar essa função
+                    </a>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-16 lg:py-20 bg-[#35DD48]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+              Pronto para transformar seu time comercial?
+            </h2>
+            <p className="text-xl text-white/95 mb-8 max-w-2xl mx-auto">
+              Simplifique a operação, ganhe velocidade e aumente resultados com a Sellou.
+            </p>
+            <a 
+              href="https://wa.me/5547996353818?text=Olá,%20quero%20contratar%20a%20Plataforma%20Sellou." 
+              target="_blank"
+              className="inline-block bg-[#008440] hover:bg-[#006030] text-white px-10 py-5 rounded-full text-xl font-bold transform hover:scale-105 transition-all duration-300 shadow-2xl"
+            >
+              Contrate agora
             </a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white pt-16 pb-8">
+      <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="flex items-center mb-4">
-                <img 
-                  src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" 
-                  alt="Sellou" 
-                  className="h-6 brightness-0 invert"
-                />
-              </div>
-              <p className="text-gray-400">Performance excepcional em um toque.</p>
+              <img 
+                src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" 
+                alt="Sellou" 
+                className="h-8 mb-4 brightness-0 invert"
+              />
+              <p className="text-gray-400">
+                Transformando vendas em resultados.
+              </p>
             </div>
             <div>
-              <h4 className="text-lg font-bold mb-4">Contato</h4>
+              <h3 className="text-lg font-semibold mb-4">Links Rápidos</h3>
               <ul className="space-y-2">
-                <li>
-                  <a href="mailto:anderson@sellou.com.br" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                    Email: anderson@sellou.com.br
-                  </a>
-                </li>
-                <li>
-                  <a href="https://wa.me/5547996353818" target="_blank" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                    WhatsApp: +55 (47) 99635-3818
-                  </a>
-                </li>
+                <li><Link to="/#inicio" className="text-gray-400 hover:text-[#35DD48] transition-colors">Início</Link></li>
+                <li><Link to="/#servicos" className="text-gray-400 hover:text-[#35DD48] transition-colors">Serviços</Link></li>
+                <li><Link to="/#sobre" className="text-gray-400 hover:text-[#35DD48] transition-colors">Sobre</Link></li>
+                <li><Link to="/#contato" className="text-gray-400 hover:text-[#35DD48] transition-colors">Contato</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-bold mb-4">Redes Sociais</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="https://www.instagram.com/sellouvendas" target="_blank" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/company/sellou-app-vendas" target="_blank" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/@sellou-vendas" target="_blank" className="text-gray-400 hover:text-[#35DD48] transition-colors">
-                    YouTube
-                  </a>
-                </li>
-              </ul>
+              <h3 className="text-lg font-semibold mb-4">Contato</h3>
+              <p className="text-gray-400 mb-2">
+                WhatsApp: <a href="https://wa.me/5547996353818" target="_blank" className="text-[#35DD48] hover:underline">(47) 99635-3818</a>
+              </p>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-500 mb-4 md:mb-0">© 2025 Sellou. Todos os direitos reservados.</p>
-              <div className="flex space-x-6">
-                <Link to="/politica-privacidade" className="text-gray-500 hover:text-[#35DD48] text-sm transition-colors">Política de Privacidade</Link>
-              </div>
-            </div>
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+            <p>&copy; 2025 Sellou. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
