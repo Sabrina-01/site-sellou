@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, CheckCircle, Laptop, Target, Zap, TrendingUp, Users } from 'lucide-react';
+import { ArrowLeft, Laptop, Target, Zap, TrendingUp, Users, Globe, Shield, Smartphone, Database } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const PlataformaVendas = () => {
@@ -8,44 +8,50 @@ const PlataformaVendas = () => {
   const videos = [
     {
       id: 'login',
-      title: 'Acesso imediato e sem fricção',
+      title: 'Comece vendendo em segundos',
       subtitle: 'Login até empresa',
-      description: 'Entre e comece a vender em segundos. Simples, rápido e intuitivo.',
+      description: 'Acesso rápido e sem fricção. Em poucos cliques, o time já está operando.',
+      benefit: 'mais tempo para vender, menos tempo para configurar.',
       video: '/lovable-uploads/login-empresa.mp4'
     },
     {
       id: 'produto',
-      title: 'Catálogo organizado, pedido sem erro',
+      title: 'Catálogo inteligente',
       subtitle: 'Criação de produto',
-      description: 'Cadastre e atualize produtos facilmente, mantendo informações padronizadas.',
+      description: 'Cadastre produtos de forma simples e padronizada. Reduza erros e mantenha tudo atualizado.',
+      benefit: 'pedidos mais rápidos e consistentes.',
       video: '/lovable-uploads/criacao-produto.mp4'
     },
     {
       id: 'dashboard',
-      title: 'Decisão rápida com dados reais',
+      title: 'Decisão em tempo real',
       subtitle: 'Dashboard',
-      description: 'Veja os números que importam e aja com confiança.',
+      description: 'KPIs claros e visuais que mostram o que está acontecendo agora.',
+      benefit: 'gestão proativa, não reativa.',
       video: '/lovable-uploads/dashboard.mp4'
     },
     {
       id: 'clientes',
-      title: 'Histórico completo de cada cliente',
+      title: 'Relacionamento que fideliza',
       subtitle: 'Tela Clientes',
-      description: 'Relacionamento e recompra simplificados, tudo em um só painel.',
+      description: 'Histórico de pedidos e contatos em um só lugar.',
+      benefit: 'base ativa, clientes reativados e recompra constante.',
       video: '/lovable-uploads/tela-clientes.mp4'
     },
     {
       id: 'pedidos',
-      title: 'Fechamento em segundos',
+      title: 'Venda completa, sem retrabalho',
       subtitle: 'Pedidos',
-      description: 'Gere pedidos rápidos e precisos, do carrinho à confirmação.',
+      description: 'Gere pedidos rápidos e seguros, sem planilhas e sem erro humano.',
+      benefit: 'produtividade e precisão em cada venda.',
       video: '/lovable-uploads/pedidos.mp4'
     },
     {
       id: 'gerenciamento',
       title: 'Controle total da operação',
       subtitle: 'Gerenciamento',
-      description: 'Acompanhe tudo em tempo real — margens, resultados e desempenho da equipe.',
+      description: 'Monitore representantes, televendas e resultados por região.',
+      benefit: 'clareza absoluta sobre performance e rentabilidade.',
       video: '/lovable-uploads/gerenciamento.mp4'
     }
   ];
@@ -120,8 +126,50 @@ const PlataformaVendas = () => {
         </div>
       </section>
 
-      {/* Por que usar a plataforma Sellou */}
+      {/* O que é a Sellou */}
       <section className="py-16 lg:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12 lg:mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                Mais do que uma plataforma. Um novo jeito de vender.
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
+                A Sellou foi criada por quem vive o comercial na prática.
+              </p>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Ela une tecnologia, estratégia e simplicidade para acelerar os resultados de indústrias e distribuidoras.
+                Com a Sellou, você centraliza informações, integra equipes e cria uma rotina comercial previsível, leve e escalável.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+              <div className="bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Força de vendas completa</h3>
+                <p className="text-gray-600">Gestão de clientes, produtos e pedidos em um só ambiente.</p>
+              </div>
+
+              <div className="bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Visão em tempo real</h3>
+                <p className="text-gray-600">Dashboards e relatórios claros para decisões rápidas.</p>
+              </div>
+
+              <div className="bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Simples de usar</h3>
+                <p className="text-gray-600">Qualquer pessoa domina em minutos.</p>
+              </div>
+
+              <div className="bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold mb-3 text-gray-900">Feita por especialistas em vendas</h3>
+                <p className="text-gray-600">Criada por executivos comerciais, para times comerciais.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Por que usar a plataforma Sellou */}
+      <section className="py-16 lg:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 lg:mb-16">
@@ -129,22 +177,23 @@ const PlataformaVendas = () => {
                 Controle total, zero complicação.
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Pensada para quem vende, gerencia e quer crescer com clareza.
+                A Sellou entrega o que todo gestor comercial precisa: previsibilidade, padronização e crescimento sustentável.<br />
+                Sem ruídos, sem retrabalho — apenas resultado.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-              <div className="flex items-start bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+              <div className="flex items-start bg-white p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-[#35DD48] rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                   <Target className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">Unifica processos</h3>
-                  <p className="text-gray-600">Tudo — clientes, produtos, pedidos e representantes — num só painel.</p>
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Unifica tudo</h3>
+                  <p className="text-gray-600">Clientes, produtos, pedidos e representantes num só painel.</p>
                 </div>
               </div>
 
-              <div className="flex items-start bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+              <div className="flex items-start bg-white p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-[#35DD48] rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                   <Zap className="w-6 h-6 text-white" />
                 </div>
@@ -154,50 +203,40 @@ const PlataformaVendas = () => {
                 </div>
               </div>
 
-              <div className="flex items-start bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+              <div className="flex items-start bg-white p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-[#35DD48] rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                   <TrendingUp className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Gera previsibilidade</h3>
-                  <p className="text-gray-600">Dashboards e relatórios em tempo real.</p>
+                  <p className="text-gray-600">Dashboards e relatórios atualizados automaticamente.</p>
                 </div>
               </div>
 
-              <div className="flex items-start bg-gray-50 p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
+              <div className="flex items-start bg-white p-6 lg:p-8 rounded-xl hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-[#35DD48] rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                   <Users className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">Aumenta engajamento</h3>
-                  <p className="text-gray-600">Equipe conectada, produtiva e orientada a resultados.</p>
+                  <p className="text-gray-600">Equipes alinhadas, conectadas e orientadas a resultado.</p>
                 </div>
               </div>
-            </div>
-
-            <div className="text-center mt-12">
-              <a 
-                href="https://wa.me/5547996353818?text=Olá,%20quero%20conhecer%20melhor%20a%20Plataforma%20Sellou." 
-                target="_blank"
-                className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all duration-300"
-              >
-                Quero conhecer melhor
-              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Veja a plataforma em ação */}
-      <section id="videos" className="py-16 lg:py-20 bg-gray-50">
+      <section id="videos" className="py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Veja como a Sellou simplifica sua rotina
+                Funcionalidades que geram resultado real.
               </h2>
               <p className="text-xl text-gray-600">
-                Clique em uma função abaixo para assistir em ação.
+                Explore as principais funções da Sellou e veja como cada recurso simplifica o dia a dia comercial.
               </p>
             </div>
 
@@ -240,7 +279,7 @@ const PlataformaVendas = () => {
                           <video
                             key={video.id}
                             className="absolute top-0 left-0 w-full h-full"
-                            style={{ objectFit: 'contain' }}
+                            style={{ objectFit: 'cover' }}
                             autoPlay
                             loop
                             muted
@@ -251,8 +290,9 @@ const PlataformaVendas = () => {
                           </video>
                         </div>
                         <div className="p-6">
-                          <h3 className="text-xl font-bold mb-2 text-gray-900">{video.title}</h3>
-                          <p className="text-gray-600 mb-4">{video.description}</p>
+                          <h3 className="text-xl font-bold mb-3 text-gray-900">{video.title}</h3>
+                          <p className="text-gray-600 mb-2">{video.description}</p>
+                          <p className="text-sm text-[#008440] font-semibold mb-4">Benefício direto: {video.benefit}</p>
                           <a 
                             href={`https://wa.me/5547996353818?text=Olá,%20quero%20usar%20a%20função%20de%20${video.subtitle}%20da%20Plataforma%20Sellou.`}
                             target="_blank"
@@ -274,7 +314,7 @@ const PlataformaVendas = () => {
                     <video
                       key={activeVideoData.id}
                       className="absolute top-0 left-0 w-full h-full"
-                      style={{ objectFit: 'contain' }}
+                      style={{ objectFit: 'cover' }}
                       autoPlay
                       loop
                       muted
@@ -286,7 +326,8 @@ const PlataformaVendas = () => {
                   </div>
                   <div className="p-8">
                     <h3 className="text-2xl font-bold mb-3 text-gray-900">{activeVideoData.title}</h3>
-                    <p className="text-gray-600 mb-6 text-lg">{activeVideoData.description}</p>
+                    <p className="text-gray-600 mb-3 text-lg">{activeVideoData.description}</p>
+                    <p className="text-base text-[#008440] font-semibold mb-6">Benefício direto: {activeVideoData.benefit}</p>
                     <a 
                       href={`https://wa.me/5547996353818?text=Olá,%20quero%20usar%20a%20função%20de%20${activeVideoData.subtitle}%20da%20Plataforma%20Sellou.`}
                       target="_blank"
@@ -302,15 +343,69 @@ const PlataformaVendas = () => {
         </div>
       </section>
 
+      {/* Integrações e diferenciais */}
+      <section className="py-16 lg:py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12 lg:mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Tecnologia simples, conectada e escalável.
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                A Sellou é flexível para se adaptar ao seu modelo de negócio.<br />
+                Conecte facilmente com seus sistemas e amplie sua operação sem perder o controle.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="bg-white p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
+                <div className="w-14 h-14 bg-[#35DD48] rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Globe className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-gray-900">Integração com ERPs</h3>
+                <p className="text-gray-600 text-sm">Conecte com sistemas internos facilmente.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
+                <div className="w-14 h-14 bg-[#35DD48] rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-gray-900">Controle por usuário</h3>
+                <p className="text-gray-600 text-sm">Níveis de acesso personalizados.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
+                <div className="w-14 h-14 bg-[#35DD48] rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Smartphone className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-gray-900">Desktop e mobile</h3>
+                <p className="text-gray-600 text-sm">Acesse de qualquer dispositivo.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
+                <div className="w-14 h-14 bg-[#35DD48] rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Database className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-gray-900">Dados na nuvem</h3>
+                <p className="text-gray-600 text-sm">Seguros e centralizados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Final */}
       <section className="py-16 lg:py-20 bg-[#35DD48]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-              Pronto para transformar seu time comercial?
+              Pronto para escalar sua performance comercial?
             </h2>
-            <p className="text-xl text-white/95 mb-8 max-w-2xl mx-auto">
-              Simplifique a operação, ganhe velocidade e aumente resultados com a Sellou.
+            <p className="text-xl text-white/95 mb-4 max-w-2xl mx-auto">
+              Transforme a rotina da sua equipe e conquiste previsibilidade com a Sellou.
+            </p>
+            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+              A tecnologia foi feita para quem quer vender mais — com estratégia e simplicidade.
             </p>
             <a 
               href="https://wa.me/5547996353818?text=Olá,%20quero%20contratar%20a%20Plataforma%20Sellou." 
