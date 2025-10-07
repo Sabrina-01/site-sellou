@@ -324,37 +324,62 @@ const PlataformaVendas = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer id="contato" className="bg-gray-900 text-white pt-16 pb-8">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 mb-8">
             <div>
-              <img 
-                src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" 
-                alt="Sellou" 
-                className="h-8 mb-4 brightness-0 invert"
-              />
-              <p className="text-gray-400">
-                Transformando vendas em resultados.
-              </p>
+              <div className="flex items-center mb-4">
+                <img 
+                  src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" 
+                  alt="Sellou" 
+                  className="h-6 brightness-0 invert"
+                />
+              </div>
+              <p className="text-gray-400">Performance excepcional em um toque.</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Links Rápidos</h3>
+              <h4 className="text-lg font-bold mb-4">Contato</h4>
               <ul className="space-y-2">
-                <li><Link to="/#inicio" className="text-gray-400 hover:text-[#35DD48] transition-colors">Início</Link></li>
-                <li><Link to="/#servicos" className="text-gray-400 hover:text-[#35DD48] transition-colors">Serviços</Link></li>
-                <li><Link to="/#sobre" className="text-gray-400 hover:text-[#35DD48] transition-colors">Sobre</Link></li>
-                <li><Link to="/#contato" className="text-gray-400 hover:text-[#35DD48] transition-colors">Contato</Link></li>
+                <li>
+                  <a href="mailto:anderson@sellou.com.br" className="text-gray-400 hover:text-[#35DD48] transition-colors">
+                    Email: anderson@sellou.com.br
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/5547996353818" target="_blank" className="text-gray-400 hover:text-[#35DD48] transition-colors">
+                    WhatsApp: +55 (47) 99635-3818
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Contato</h3>
-              <p className="text-gray-400 mb-2">
-                WhatsApp: <a href="https://wa.me/5547996353818" target="_blank" className="text-[#35DD48] hover:underline">(47) 99635-3818</a>
-              </p>
+              <h4 className="text-lg font-bold mb-4">Redes Sociais</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href="https://www.instagram.com/sellouvendas" target="_blank" className="text-gray-400 hover:text-[#35DD48] transition-colors">
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/sellou-app-vendas" target="_blank" className="text-gray-400 hover:text-[#35DD48] transition-colors">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@sellou-vendas" target="_blank" className="text-gray-400 hover:text-[#35DD48] transition-colors">
+                    YouTube
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Sellou. Todos os direitos reservados.</p>
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+              <p className="text-gray-500 text-sm text-center sm:text-left">© 2025 Sellou. Todos os direitos reservados.</p>
+              <div className="flex space-x-6">
+                <Link to="/politica-privacidade" className="text-gray-500 hover:text-[#35DD48] text-sm transition-colors">Política de Privacidade</Link>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
