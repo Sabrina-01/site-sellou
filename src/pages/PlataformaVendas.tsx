@@ -279,7 +279,7 @@ const PlataformaVendas = () => {
                           <video
                             key={video.id}
                             className="absolute top-0 left-0 w-full h-full"
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'contain' }}
                             autoPlay
                             loop
                             muted
@@ -314,7 +314,7 @@ const PlataformaVendas = () => {
                     <video
                       key={activeVideoData.id}
                       className="absolute top-0 left-0 w-full h-full"
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: 'contain' }}
                       autoPlay
                       loop
                       muted
