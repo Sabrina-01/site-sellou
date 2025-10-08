@@ -31,26 +31,26 @@ const Palestras = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-green-50 py-12 lg:py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#35DD48] to-[#008440] py-12 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Link to="/" className="inline-flex items-center text-[#008440] hover:text-[#35DD48] mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
+            <Link to="/" className="inline-flex items-center text-white hover:text-white/80 mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Voltar para página inicial
             </Link>
-            <div className="w-16 h-16 lg:w-20 lg:h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6">
-              <Presentation className="w-8 h-8 lg:w-10 lg:h-10 text-[#35DD48]" />
+            <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6">
+              <Presentation className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6 px-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 lg:mb-6 px-4">
               Palestras
             </h1>
-            <p className="text-lg lg:text-xl text-gray-700 mb-6 lg:mb-8 px-4">
+            <p className="text-lg lg:text-xl text-white/90 mb-6 lg:mb-8 px-4">
               Eventos inspiradores e educativos sobre vendas, liderança e crescimento empresarial para motivar sua equipe.
             </p>
             <a 
               href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
               target="_blank"
-              className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
+              className="bg-[#008440] hover:bg-white hover:text-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-lg text-base lg:text-lg font-semibold transition-all duration-300 hover:shadow-lg inline-block"
             >
               Solicitar Palestra
             </a>
@@ -59,10 +59,10 @@ const Palestras = () => {
       </section>
 
       {/* Temas das Palestras */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-12 lg:py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Temas das Palestras</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4 text-[#008440]">Temas das Palestras</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
               <div className="flex items-start">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
@@ -105,10 +105,10 @@ const Palestras = () => {
       </section>
 
       {/* Tipos de Eventos */}
-      <section className="py-12 lg:py-16 bg-gray-50">
+      <section className="py-12 lg:py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Tipos de Eventos</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4 text-[#008440]">Tipos de Eventos</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -137,10 +137,10 @@ const Palestras = () => {
       </section>
 
       {/* Temas Principais */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-12 lg:py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Temas Principais</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4 text-[#008440]">Temas Principais</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-4 text-[#35DD48]">Vendas e Performance</h3>
@@ -184,10 +184,10 @@ const Palestras = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <section className="py-12 lg:py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 px-4">Inspire sua Equipe com Conteúdo de Qualidade</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 px-4 text-[#008440]">Inspire sua Equipe com Conteúdo de Qualidade</h2>
             <p className="text-lg lg:text-xl text-gray-600 mb-6 lg:mb-8 px-4">Transforme eventos em momentos marcantes de aprendizado e motivação</p>
             <a 
               href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 

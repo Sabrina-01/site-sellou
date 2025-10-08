@@ -32,26 +32,26 @@ const TreinamentoEquipe = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-green-50 py-12 lg:py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#35DD48] to-[#008440] py-12 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Link to="/" className="inline-flex items-center text-[#008440] hover:text-[#35DD48] mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
+            <Link to="/" className="inline-flex items-center text-white hover:text-white/80 mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Voltar para página inicial
             </Link>
-            <div className="w-16 h-16 lg:w-20 lg:h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6">
-              <GraduationCap className="w-8 h-8 lg:w-10 lg:h-10 text-[#35DD48]" />
+            <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6">
+              <GraduationCap className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6 px-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 lg:mb-6 px-4">
               Treinamentos
             </h1>
-            <p className="text-lg lg:text-xl text-gray-700 mb-6 lg:mb-8 px-4">
+            <p className="text-lg lg:text-xl text-white/90 mb-6 lg:mb-8 px-4">
               Desenvolvemos pessoas e transformamos resultados através de treinamentos práticos e estratégicos.
             </p>
             <a 
               href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
               target="_blank"
-              className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
+              className="bg-[#008440] hover:bg-white hover:text-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-lg text-base lg:text-lg font-semibold transition-all duration-300 hover:shadow-lg inline-block"
             >
               Solicitar Treinamento
             </a>
@@ -60,10 +60,10 @@ const TreinamentoEquipe = () => {
       </section>
 
       {/* Nossa Metodologia */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Nossa Metodologia</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-[#008440]">Nossa Metodologia</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex items-start">
                 <Target className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
@@ -158,7 +158,7 @@ const TreinamentoEquipe = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Formatos Disponíveis</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-[#008440]">Formatos Disponíveis</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gray-50 p-6 rounded-lg text-center">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -513,10 +513,10 @@ const TreinamentoEquipe = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <section className="py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Desenvolva Pessoas e Transforme Resultados</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#008440]">Desenvolva Pessoas e Transforme Resultados</h2>
             <p className="text-xl text-gray-600 mb-8">Invista em treinamentos de impacto e colha performance excepcional</p>
             <a 
               href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20os%20treinamentos%20da%20Sellou." 

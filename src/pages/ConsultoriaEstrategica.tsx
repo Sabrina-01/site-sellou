@@ -31,26 +31,26 @@ const ConsultoriaEstrategica = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-green-50 py-12 lg:py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#35DD48] to-[#008440] py-12 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Link to="/" className="inline-flex items-center text-[#008440] hover:text-[#35DD48] mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
+            <Link to="/" className="inline-flex items-center text-white hover:text-white/80 mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Voltar para página inicial
             </Link>
-            <div className="w-16 h-16 lg:w-20 lg:h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6">
-              <TrendingUp className="w-8 h-8 lg:w-10 lg:h-10 text-[#35DD48]" />
+            <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6">
+              <TrendingUp className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 lg:mb-6 px-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 lg:mb-6 px-4">
               Consultoria Comercial Sellou
             </h1>
-            <p className="text-lg lg:text-xl text-gray-700 mb-6 lg:mb-8 px-4">
+            <p className="text-lg lg:text-xl text-white/90 mb-6 lg:mb-8 px-4">
               Transformamos processos comerciais fragmentados em máquinas de vendas de alta performance.
             </p>
             <a 
               href="https://wa.me/5547996353818?text=Olá,%20quero%20transformar%20minha%20área%20comercial" 
               target="_blank"
-              className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
+              className="bg-[#008440] hover:bg-white hover:text-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-lg text-base lg:text-lg font-semibold transition-all duration-300 hover:shadow-lg inline-block"
             >
               Quero transformar minha área comercial
             </a>
@@ -59,30 +59,30 @@ const ConsultoriaEstrategica = () => {
       </section>
 
       {/* O que fazemos */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-12 lg:py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Soluções sob medida para sua operação comercial</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4 text-[#008440]">Soluções sob medida para sua operação comercial</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-              <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100 hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
                   <BarChart className="w-6 h-6 text-[#35DD48]" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Consultoria de Gestão Comercial</h3>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100 hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
                   <Users className="w-6 h-6 text-[#35DD48]" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Mentoria</h3>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100 hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
                   <Presentation className="w-6 h-6 text-[#35DD48]" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Palestras e Treinamentos</h3>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100 hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
                   <Zap className="w-6 h-6 text-[#35DD48]" />
                 </div>
@@ -195,10 +195,10 @@ const ConsultoriaEstrategica = () => {
       </section>
 
       {/* Por que escolher */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-green-50 via-white to-green-50">
+      <section className="py-12 lg:py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Resultados que sustentam crescimento</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4 text-[#008440]">Resultados que sustentam crescimento</h2>
             <div className="space-y-4 mb-10">
               <div className="flex items-start bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">

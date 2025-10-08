@@ -95,24 +95,23 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section id="inicio" className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-green-50">
+      <section id="inicio" className="relative overflow-hidden bg-gradient-to-br from-[#35DD48] to-[#008440]">
         <div className="container mx-auto px-4 py-12 sm:py-16 lg:py-20">
           <div className="flex flex-col md:flex-row items-center">
             <div className="w-full md:w-7/12 mb-8 md:mb-0 text-center md:text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 md:mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 md:mb-6 leading-tight">
                 Bem-vindo(a) ao futuro das vendas
               </h1>
-              <p className="text-lg sm:text-xl text-gray-700 mb-8 md:mb-10 max-w-[520px] mx-auto md:mx-0">
+              <p className="text-lg sm:text-xl text-white/90 mb-8 md:mb-10 max-w-[520px] mx-auto md:mx-0">
                 Performance excepcional em um toque
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-4">
                 <a 
                   href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
                   target="_blank"
-                  className="group relative bg-gradient-to-r from-[#35DD48] to-[#008440] text-white px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-full font-medium overflow-hidden transition-all duration-500 hover:shadow-lg hover:shadow-green-500/30 hover:-translate-y-1 text-center"
+                  className="bg-[#008440] hover:bg-[#35DD48] text-white px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg text-center"
                 >
-                  <span className="relative z-10 text-sm sm:text-base lg:text-lg">Contrate nossos serviços</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#008440]/20 via-[#35DD48]/20 to-[#008440]/20 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
+                  <span className="text-sm sm:text-base lg:text-lg">Contrate nossos serviços</span>
                 </a>
               </div>
             </div>
@@ -130,11 +129,11 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="servicos" className="py-16 bg-gray-50">
+      <section id="servicos" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1 bg-green-100 text-[#008440] rounded-full text-sm font-medium mb-3">Serviços</span>
-            <h2 className="text-3xl font-bold mb-2">Soluções Completas em Vendas</h2>
+            <h2 className="text-3xl font-bold mb-2 text-[#008440]">Soluções Completas em Vendas</h2>
             <p className="text-gray-600">Estratégias personalizadas para maximizar seus resultados</p>
           </div>
           
@@ -235,11 +234,11 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="py-16 bg-white">
+      <section id="sobre" className="py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1 bg-green-100 text-[#008440] rounded-full text-sm font-medium mb-3">Sobre Nós</span>
-            <h2 className="text-3xl font-bold mb-2">Transformando Negócios Através de Vendas</h2>
+            <h2 className="text-3xl font-bold mb-2 text-[#008440]">Transformando Negócios Através de Vendas</h2>
             <p className="text-gray-600">Somos especialistas em potencializar resultados comerciais</p>
           </div>
           
@@ -301,11 +300,11 @@ const Index = () => {
       </section>
 
       {/* Team Section */}
-      <section id="equipe" className="py-16 bg-gray-50">
+      <section id="equipe" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1 bg-green-100 text-[#008440] rounded-full text-sm font-medium mb-3">Nossa Equipe</span>
-            <h2 className="text-3xl font-bold mb-2">Especialistas em Vendas</h2>
+            <h2 className="text-3xl font-bold mb-2 text-[#008440]">Especialistas em Vendas</h2>
             <p className="text-gray-600">Conheça os profissionais que fazem a diferença</p>
           </div>
           
@@ -356,16 +355,16 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-green-50 via-white to-green-50 relative overflow-hidden cta-section">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#F5F5F5] relative overflow-hidden cta-section">
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center cta-content opacity-0 translate-y-8">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">Pronto para Transformar suas Vendas?</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-[#008440]">Pronto para Transformar suas Vendas?</h2>
             <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 px-4">Junte-se a centenas de empresas que já transformaram seus resultados com a Sellou</p>
             <div className="flex flex-col items-center gap-4">
               <a 
                 href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Sellou." 
                 target="_blank"
-                className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium transform hover:scale-105 transition-all duration-300 max-w-xs sm:max-w-none text-center"
+                className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-lg max-w-xs sm:max-w-none text-center"
               >
                 Quero vender com a Sellou
               </a>
@@ -375,7 +374,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer id="contato" className="bg-gray-900 text-white pt-16 pb-8">
+      <footer id="contato" className="bg-[#008440] text-white pt-16 pb-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 mb-8">
             <div>
