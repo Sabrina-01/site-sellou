@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
               Sua privacidade é importante para nós. A seguir, explicamos como coletamos, usamos e protegemos as informações que você compartilha conosco.
             </p>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-[#008440]">Informações Coletadas</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Informações Coletadas</h2>
             <p className="text-gray-700 mb-4">Coletamos as seguintes informações:</p>
             <ul className="list-disc pl-6 mb-6 text-gray-700">
               <li className="mb-2">
@@ -58,7 +58,7 @@ const PrivacyPolicy = () => {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-[#008440]">Uso das Informações</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Uso das Informações</h2>
             <p className="text-gray-700 mb-4">Utilizamos as informações coletadas para:</p>
             <ul className="list-disc pl-6 mb-6 text-gray-700">
               <li className="mb-2">Oferecer e melhorar nossos serviços.</li>
@@ -66,22 +66,22 @@ const PrivacyPolicy = () => {
               <li className="mb-2">Compreender como você interage com nosso conteúdo e otimizar nosso marketing.</li>
             </ul>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-[#008440]">Compartilhamento de Informações</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Compartilhamento de Informações</h2>
             <p className="text-gray-700 mb-6">
               Não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para processar serviços, ou quando exigido por lei.
             </p>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-[#008440]">Cookies</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Cookies</h2>
             <p className="text-gray-700 mb-6">
               Nosso site usa cookies para melhorar a experiência de navegação. Você pode desabilitar os cookies no seu navegador, mas isso pode afetar algumas funcionalidades do site.
             </p>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-[#008440]">Segurança das Informações</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Segurança das Informações</h2>
             <p className="text-gray-700 mb-6">
               Tomamos medidas razoáveis para proteger suas informações pessoais, mas não podemos garantir segurança absoluta.
             </p>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-[#008440]">Alterações nesta Política</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">Alterações nesta Política</h2>
             <p className="text-gray-700 mb-6">
               Podemos atualizar esta Política de Privacidade periodicamente. Recomendamos que você verifique esta página regularmente.
             </p>

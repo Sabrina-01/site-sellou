@@ -62,7 +62,7 @@ const ConsultoriaEstrategica = () => {
       <section className="py-12 lg:py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4 text-[#008440]">Soluções sob medida para sua operação comercial</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Soluções sob medida para sua operação comercial</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
@@ -198,7 +198,7 @@ const ConsultoriaEstrategica = () => {
       <section className="py-12 lg:py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4 text-[#008440]">Resultados que sustentam crescimento</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 px-4">Resultados que sustentam crescimento</h2>
             <div className="space-y-4 mb-10">
               <div className="flex items-start bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">

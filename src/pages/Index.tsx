@@ -133,7 +133,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1 bg-green-100 text-[#008440] rounded-full text-sm font-medium mb-3">Serviços</span>
-            <h2 className="text-3xl font-bold mb-2 text-[#008440]">Soluções Completas em Vendas</h2>
+            <h2 className="text-3xl font-bold mb-2">Soluções Completas em Vendas</h2>
             <p className="text-gray-600">Estratégias personalizadas para maximizar seus resultados</p>
           </div>
           
@@ -238,7 +238,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1 bg-green-100 text-[#008440] rounded-full text-sm font-medium mb-3">Sobre Nós</span>
-            <h2 className="text-3xl font-bold mb-2 text-[#008440]">Transformando Negócios Através de Vendas</h2>
+            <h2 className="text-3xl font-bold mb-2">Transformando Negócios Através de Vendas</h2>
             <p className="text-gray-600">Somos especialistas em potencializar resultados comerciais</p>
           </div>
           
@@ -304,7 +304,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1 bg-green-100 text-[#008440] rounded-full text-sm font-medium mb-3">Nossa Equipe</span>
-            <h2 className="text-3xl font-bold mb-2 text-[#008440]">Especialistas em Vendas</h2>
+            <h2 className="text-3xl font-bold mb-2">Especialistas em Vendas</h2>
             <p className="text-gray-600">Conheça os profissionais que fazem a diferença</p>
           </div>
           
@@ -358,7 +358,7 @@ const Index = () => {
       <section className="py-16 sm:py-20 lg:py-24 bg-[#F5F5F5] relative overflow-hidden cta-section">
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center cta-content opacity-0 translate-y-8">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-[#008440]">Pronto para Transformar suas Vendas?</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">Pronto para Transformar suas Vendas?</h2>
             <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 px-4">Junte-se a centenas de empresas que já transformaram seus resultados com a Sellou</p>
             <div className="flex flex-col items-center gap-4">
               <a 

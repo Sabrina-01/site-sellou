@@ -63,7 +63,7 @@ const TreinamentoEquipe = () => {
       <section className="py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[#008440]">Nossa Metodologia</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Nossa Metodologia</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex items-start">
                 <Target className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
@@ -158,7 +158,7 @@ const TreinamentoEquipe = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[#008440]">Formatos Disponíveis</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Formatos Disponíveis</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gray-50 p-6 rounded-lg text-center">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -516,7 +516,7 @@ const TreinamentoEquipe = () => {
       <section className="py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#008440]">Desenvolva Pessoas e Transforme Resultados</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Desenvolva Pessoas e Transforme Resultados</h2>
             <p className="text-xl text-gray-600 mb-8">Invista em treinamentos de impacto e colha performance excepcional</p>
             <a 
               href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20os%20treinamentos%20da%20Sellou." 
