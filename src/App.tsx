@@ -11,6 +11,7 @@ import ConsultoriaEstrategica from "./pages/ConsultoriaEstrategica";
 import PlataformaVendas from "./pages/PlataformaVendas";
 import TreinamentoEquipe from "./pages/TreinamentoEquipe";
 import Palestras from "./pages/Palestras";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/consultoria-estrategica" element={<ConsultoriaEstrategica />} />
