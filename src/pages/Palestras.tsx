@@ -146,7 +146,7 @@ const Palestras = () => {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow lg:col-start-1 lg:col-end-2 lg:mx-auto lg:max-w-md">
                 <h3 className="text-xl font-bold text-[#008440] mb-3">Como Construir um Time Comercial Imbatível</h3>
                 <p className="text-gray-600 mb-4">
                   Palestra voltada a CEOs, diretores e líderes comerciais.
@@ -156,7 +156,7 @@ const Palestras = () => {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow lg:col-start-2 lg:col-end-3 lg:mx-auto lg:max-w-md md:col-start-2">
                 <h3 className="text-xl font-bold text-[#008440] mb-3">A Mente do Líder Extraordinário</h3>
                 <p className="text-gray-600 mb-4">
                   Baseada nas práticas de liderança consciente e foco em resultados sustentáveis.
