@@ -1,19 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Lightbulb, Target, Users, TrendingUp, MessageCircle, Award, Clock, UserPlus, Zap } from 'lucide-react';
-
 const Palestras = () => {
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="w-full bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <a href="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" 
-              alt="Sellou" 
-              className="h-6 sm:h-8"
-            />
+            <img src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" alt="Sellou" className="h-6 sm:h-8" />
           </a>
           <nav className="hidden md:flex items-center justify-center flex-1 mx-10">
             <a href="/#inicio" className="mx-2 lg:mx-4 text-gray-700 hover:text-[#35DD48] transition-colors text-sm lg:text-base">Início</a>
@@ -40,11 +34,7 @@ const Palestras = () => {
             <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
               Experiências vivas de liderança, vendas e alta performance — inspirando times a agir com mais foco, clareza e resultado.
             </p>
-            <a 
-              href="https://wa.me/5547996353818?text=Olá,%20quero%20levar%20a%20Sellou%20para%20meu%20evento." 
-              target="_blank"
-              className="inline-block bg-white text-[#008440] hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:shadow-lg"
-            >
+            <a href="https://wa.me/5547996353818?text=Olá,%20quero%20levar%20a%20Sellou%20para%20meu%20evento." target="_blank" className="inline-block bg-white text-[#008440] hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:shadow-lg">
               Quero levar a Sellou para meu evento
             </a>
           </div>
@@ -65,9 +55,7 @@ const Palestras = () => {
               <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-4">
                 Mais do que motivação, entregam clareza e direção prática para agir imediatamente.
               </p>
-              <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-                Cada encontro é desenhado para conectar emoção e execução — com linguagem moderna, direta e inspiradora.
-              </p>
+              <p className="text-lg text-gray-600 max-w-4xl mx-auto">Cada encontro é desenhado para conectar emoção e execução com linguagem moderna, direta e inspiradora.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
@@ -278,11 +266,7 @@ const Palestras = () => {
               Desperte o potencial do seu time com uma palestra que combina propósito, energia e execução.
               Fale conosco e descubra como criar uma experiência inesquecível para sua equipe.
             </p>
-            <a 
-              href="https://wa.me/5547996353818?text=Olá,%20quero%20agendar%20uma%20palestra%20com%20Anderson%20Medeiros." 
-              target="_blank"
-              className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:shadow-lg"
-            >
+            <a href="https://wa.me/5547996353818?text=Olá,%20quero%20agendar%20uma%20palestra%20com%20Anderson%20Medeiros." target="_blank" className="inline-block bg-[#35DD48] hover:bg-[#008440] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:shadow-lg">
               Agendar palestra com Anderson Medeiros
             </a>
           </div>
@@ -295,11 +279,7 @@ const Palestras = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 mb-8">
             <div>
               <div className="flex items-center mb-4">
-                <img 
-                  src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" 
-                  alt="Sellou" 
-                  className="h-6 brightness-0 invert"
-                />
+                <img src="/lovable-uploads/909dad84-bf50-4154-ab6b-d7979572b5cc.png" alt="Sellou" className="h-6 brightness-0 invert" />
               </div>
               <p className="text-gray-400">Performance excepcional em um toque.</p>
             </div>
@@ -349,8 +329,6 @@ const Palestras = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Palestras;
