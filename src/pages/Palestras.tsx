@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Lightbulb, Target, Users, TrendingUp, MessageCircle, Award, Clock, UserPlus, Zap } from 'lucide-react';
+import { Lightbulb, Target, Users, TrendingUp, MessageCircle, Award, Clock, UserPlus, Zap, ArrowLeft } from 'lucide-react';
 const Palestras = () => {
   return <div className="min-h-screen bg-white">
       {/* Header */}
@@ -28,6 +28,10 @@ const Palestras = () => {
       <section className="relative overflow-hidden bg-gradient-to-br from-[#35DD48] to-[#008440] py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
+            <Link to="/" className="inline-flex items-center text-white hover:text-white/80 mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Voltar para página inicial
+            </Link>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
               Palestras que despertam performance e propósito.
             </h1>
