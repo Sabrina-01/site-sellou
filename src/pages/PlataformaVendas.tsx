@@ -108,7 +108,7 @@ const PlataformaVendas = () => {
               </p>
               <a 
                 href="#videos"
-                className="inline-block bg-white text-[#008440] hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl"
+                className="inline-block bg-[#008440] hover:bg-white hover:text-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-lg text-base lg:text-lg font-semibold transition-all duration-300 hover:shadow-lg"
               >
                 Ver a plataforma em ação
               </a>
