@@ -110,31 +110,31 @@ const ConsultoriaEstrategica = () => {
             <div className="space-y-4">
               <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <p className="text-gray-700 text-lg"><strong>Diagnóstico com propósito</strong> – entendemos gargalos e oportunidades antes de agir.</p>
+                <p className="text-gray-700 text-lg"><strong>Diagnóstico com propósito:</strong> entendemos gargalos e oportunidades antes de agir.</p>
               </div>
               <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <p className="text-gray-700 text-lg"><strong>Time de alta performance</strong> – reestruturamos equipes com foco em produtividade real.</p>
+                <p className="text-gray-700 text-lg"><strong>Time de alta performance:</strong> reestruturamos equipes com foco em produtividade real.</p>
               </div>
               <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <p className="text-gray-700 text-lg"><strong>Liderança que inspira e entrega</strong> – formamos gestores com visão estratégica e domínio de dados.</p>
+                <p className="text-gray-700 text-lg"><strong>Liderança que inspira e entrega:</strong> formamos gestores com visão estratégica e domínio de dados.</p>
               </div>
               <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <p className="text-gray-700 text-lg"><strong>Indicadores que guiam decisões</strong> – KPIs claros, previsibilidade e gestão por dados.</p>
+                <p className="text-gray-700 text-lg"><strong>Indicadores que guiam decisões:</strong> KPIs claros, previsibilidade e gestão por dados.</p>
               </div>
               <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <p className="text-gray-700 text-lg"><strong>Processos padronizados</strong> – políticas comerciais que organizam e escalam resultados.</p>
+                <p className="text-gray-700 text-lg"><strong>Processos padronizados:</strong> políticas comerciais que organizam e escalam resultados.</p>
               </div>
               <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <p className="text-gray-700 text-lg"><strong>Cultura de performance</strong> – incentivos, reconhecimento e planos que sustentam engajamento.</p>
+                <p className="text-gray-700 text-lg"><strong>Cultura de performance:</strong> incentivos, reconhecimento e planos que sustentam engajamento.</p>
               </div>
               <div className="flex items-start bg-white p-5 rounded-lg shadow-sm">
                 <CheckCircle className="w-6 h-6 text-[#35DD48] mr-4 mt-1 flex-shrink-0" />
-                <p className="text-gray-700 text-lg"><strong>Consultoria com tecnologia</strong> – estratégia unida ao software de força de vendas para escalar performance.</p>
+                <p className="text-gray-700 text-lg"><strong>Consultoria com tecnologia:</strong> estratégia unida ao software de força de vendas para escalar performance.</p>
               </div>
             </div>
             <div className="text-center mt-8">
