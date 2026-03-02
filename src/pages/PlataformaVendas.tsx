@@ -410,7 +410,7 @@ const PlataformaVendas = () => {
             <a 
               href="https://wa.me/5547996353818?text=Olá,%20quero%20contratar%20a%20Plataforma%20Sellou." 
               target="_blank"
-              className="inline-block bg-[#008440] hover:bg-[#006030] text-white px-10 py-5 rounded-full text-xl font-bold transform hover:scale-105 transition-all duration-300 shadow-2xl"
+              className="inline-block bg-[#35DD48] hover:bg-[#2bc93e] text-white px-10 py-5 rounded-full text-xl font-bold transform hover:scale-105 transition-all duration-300 shadow-2xl"
             >
               Contrate agora
             </a>
