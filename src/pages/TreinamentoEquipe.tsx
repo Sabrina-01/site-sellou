@@ -1,7 +1,128 @@
 import React from 'react';
-import { ArrowLeft, CheckCircle, BookOpen, Trophy, MessageSquare, Target, Lightbulb, Clock, Users, GraduationCap } from 'lucide-react';
+import { ArrowLeft, CheckCircle, BookOpen, Trophy, MessageSquare, Target, Lightbulb, Clock, Users, GraduationCap, Award, Zap, Shield, Brain, BarChart3, Phone, type LucideIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+
+interface Treinamento {
+  title: string;
+  subtitle: string;
+  icon: LucideIcon;
+  detalhes: string[];
+  whatsapp: string;
+}
+
+const treinamentos: Treinamento[] = [
+  {
+    title: "Domínio Comercial",
+    subtitle: "A Jornada do Representante Imparável.",
+    icon: BookOpen,
+    detalhes: [
+      "Público-alvo: Vendedores e representantes comerciais",
+      "Formato: Treinamento intensivo",
+      "Objetivo: Transformar vendedores comuns em CEOs do território, com autoconfiança, autoridade e performance."
+    ],
+    whatsapp: "Domínio%20Comercial"
+  },
+  {
+    title: "Líder Diamante",
+    subtitle: "Forjados na pressão, lapidados pela excelência.",
+    icon: Award,
+    detalhes: [
+      "Público-alvo: Líderes e gestores",
+      "Formato: Workshop",
+      "Objetivo: Lapidação de mentalidade para líderes que brilham na crise e transformam pressão em potência."
+    ],
+    whatsapp: "Líder%20Diamante"
+  },
+  {
+    title: "A Mente do Líder Extraordinário",
+    subtitle: "Liderança inspiradora, estratégica e exemplar.",
+    icon: Brain,
+    detalhes: [
+      "Público-alvo: Líderes e executivos",
+      "Formato: Programa de desenvolvimento",
+      "Objetivo: Modelo baseado em neurociência. Mais engajamento, equipes leais, cultura forte e decisões assertivas."
+    ],
+    whatsapp: "A%20Mente%20do%20Líder%20Extraordinário"
+  },
+  {
+    title: "Liderança em Tempos Difíceis",
+    subtitle: "Lidere na tempestade com coragem.",
+    icon: Shield,
+    detalhes: [
+      "Público-alvo: CEOs, diretores e gerentes",
+      "Formato: Workshop intensivo",
+      "Objetivo: Preparar líderes para manter clareza, coragem e performance mesmo nos piores cenários."
+    ],
+    whatsapp: "Liderança%20em%20Tempos%20Difíceis"
+  },
+  {
+    title: "Gerente de Sucesso",
+    subtitle: "Você não gerencia tarefas. Você lidera destinos.",
+    icon: Trophy,
+    detalhes: [
+      "Público-alvo: Gerentes comerciais",
+      "Formato: Treinamento prático",
+      "Objetivo: Formação de líderes estratégicos que inspiram, constroem lealdade e transformam resultados."
+    ],
+    whatsapp: "Gerente%20de%20Sucesso"
+  },
+  {
+    title: "O Jogo Completo das Vendas",
+    subtitle: "Técnicas de abordagem, escuta ativa e negociação consultiva.",
+    icon: Target,
+    detalhes: [
+      "Público-alvo: Equipes de vendas",
+      "Formato: Workshop interativo",
+      "Objetivo: Transformar abordagens genéricas em vendas de impacto, com foco em margem e negociação estratégica."
+    ],
+    whatsapp: "O%20Jogo%20Completo%20das%20Vendas"
+  },
+  {
+    title: "Passos para Alta Performance",
+    subtitle: "Todo gigante começou com o primeiro passo certo.",
+    icon: Zap,
+    detalhes: [
+      "Público-alvo: SDRs, iniciantes e televendas",
+      "Formato: Treinamento estruturado",
+      "Objetivo: Passo a passo para dominar técnica, processo e atitude em vendas."
+    ],
+    whatsapp: "Passos%20para%20Alta%20Performance"
+  },
+  {
+    title: "Gestão Comercial e Desenvolvimento de Equipes",
+    subtitle: "Contratação, KPIs e cultura de alta performance.",
+    icon: BarChart3,
+    detalhes: [
+      "Público-alvo: Gestores e líderes comerciais",
+      "Formato: Programa de capacitação",
+      "Objetivo: Estratégias práticas para formar e sustentar times comerciais de alta performance."
+    ],
+    whatsapp: "Gestão%20Comercial%20e%20Desenvolvimento%20de%20Equipes"
+  },
+  {
+    title: "Técnicas de Negociação e Poder de Persuasão",
+    subtitle: "Transforme objeções em oportunidades.",
+    icon: MessageSquare,
+    detalhes: [
+      "Público-alvo: Vendedores e negociadores",
+      "Formato: Workshop prático",
+      "Objetivo: Combinar fundamentos clássicos com IA, empatia e dados para negociação estratégica."
+    ],
+    whatsapp: "Técnicas%20de%20Negociação%20e%20Poder%20de%20Persuasão"
+  },
+  {
+    title: "Formação e Técnicas de Vendas para Televendas",
+    subtitle: "Transforme seu televendas em máquina de fechar negócios.",
+    icon: Phone,
+    detalhes: [
+      "Público-alvo: Equipes de televendas",
+      "Formato: Treinamento intensivo",
+      "Objetivo: Virada de chave para transformar ligações em conversões reais, com foco em performance."
+    ],
+    whatsapp: "Formação%20e%20Técnicas%20de%20Vendas%20para%20Televendas"
+  }
+];
 
 const TreinamentoEquipe = () => {
   return (
@@ -199,310 +320,48 @@ const TreinamentoEquipe = () => {
             <div className="relative px-12">
               <Carousel className="w-full">
                 <CarouselContent className="-ml-1">
-                  {/* Card 1 - Domínio Comercial */}
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">Domínio Comercial</h3>
-                        <p className="text-[#35DD48] font-medium mb-4 italic">A Jornada do Representante Imparável.</p>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Temas Abordados:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Desbloqueando a Mente Imbatível</li>
-                            <li>• Representante Alfa</li>
-                            <li>• Representante CEO</li>
-                            <li>• Rota Lucrativa</li>
-                            <li>• Vendendo em Modo de Combate</li>
-                          </ul>
+                  {treinamentos.map((treinamento, index) => {
+                    const Icon = treinamento.icon;
+                    return (
+                      <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+                        <div className="p-2 h-full">
+                          <div className="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow p-8 h-full flex flex-col">
+                            {/* Icon */}
+                            <div className="flex justify-center mb-6">
+                              <div className="w-16 h-16 bg-green-50 border-2 border-[#35DD48]/20 rounded-full flex items-center justify-center">
+                                <Icon className="w-8 h-8 text-[#35DD48]" />
+                              </div>
+                            </div>
+                            
+                            {/* Title */}
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">{treinamento.title}</h3>
+                            
+                            {/* Subtitle */}
+                            <p className="text-[#35DD48] font-medium mb-5 italic">{treinamento.subtitle}</p>
+                            
+                            {/* Detalhes */}
+                            <div className="mb-6 flex-grow">
+                              <h4 className="font-bold text-gray-900 mb-3">Detalhes:</h4>
+                              <ul className="text-sm text-gray-600 space-y-2">
+                                {treinamento.detalhes.map((detalhe, i) => (
+                                  <li key={i}>• {detalhe}</li>
+                                ))}
+                              </ul>
+                            </div>
+                            
+                            {/* Button */}
+                            <a 
+                              href={`https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20${treinamento.whatsapp}.`}
+                              target="_blank"
+                              className="block w-full bg-[#35DD48] hover:bg-[#2bc93e] text-white py-3 rounded-full text-center font-semibold text-base transition-colors"
+                            >
+                              Saiba mais
+                            </a>
+                          </div>
                         </div>
-                        <p className="text-gray-600 mb-6 text-sm">
-                          Transformar vendedores comuns em CEOs do território, com autoconfiança, autoridade e performance.
-                        </p>
-                        <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Domínio%20Comercial." 
-                          target="_blank"
-                          className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
-                        >
-                          Quero este treinamento
-                        </a>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Card 2 - Líder Diamante */}
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">Líder Diamante</h3>
-                        <p className="text-[#35DD48] font-medium mb-4 italic">Forjados na pressão, lapidados pela excelência.</p>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Temas Abordados:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Pressão como ferramenta de formação</li>
-                            <li>• Diferença entre carvão e diamante</li>
-                            <li>• Perfil do Líder Diamante</li>
-                            <li>• Lapidação</li>
-                            <li>• Valor e escassez</li>
-                          </ul>
-                        </div>
-                        <p className="text-gray-600 mb-6 text-sm">
-                          Lapidação de mentalidade para líderes que brilham na crise e transformam pressão em potência.
-                        </p>
-                        <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Líder%20Diamante." 
-                          target="_blank"
-                          className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
-                        >
-                          Quero este treinamento
-                        </a>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Card 3 - A Mente do Líder Extraordinário */}
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">A Mente do Líder Extraordinário</h3>
-                        <p className="text-[#35DD48] font-medium mb-4 italic">Liderança inspiradora, estratégica e exemplar.</p>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Temas Abordados:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Despertar da Liderança MSC</li>
-                            <li>• Autoliderança</li>
-                            <li>• Mindfulness</li>
-                            <li>• Altruísmo em Ação</li>
-                            <li>• Compaixão com Discernimento</li>
-                            <li>• Cultura MSC</li>
-                          </ul>
-                        </div>
-                        <p className="text-gray-600 mb-6 text-sm">
-                          Modelo baseado em neurociência. Mais engajamento, equipes leais, cultura forte e decisões assertivas.
-                        </p>
-                        <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20A%20Mente%20do%20Líder%20Extraordinário." 
-                          target="_blank"
-                          className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
-                        >
-                          Quero este treinamento
-                        </a>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Card 4 - Liderança em Tempos Difíceis */}
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">Liderança em Tempos Difíceis</h3>
-                        <p className="text-[#35DD48] font-medium mb-4 italic">Lidere na tempestade com coragem.</p>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Temas Abordados:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Papel do líder em cenários desafiadores</li>
-                            <li>• Mentalidade antifrágil</li>
-                            <li>• Comunicação na incerteza</li>
-                            <li>• Gestão da energia emocional</li>
-                            <li>• Planejamento ágil</li>
-                            <li>• Liderança pelo exemplo</li>
-                          </ul>
-                        </div>
-                        <p className="text-gray-600 mb-6 text-sm">
-                          Preparar CEOs, diretores e gerentes para manter clareza, coragem e performance mesmo nos piores cenários.
-                        </p>
-                        <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Liderança%20em%20Tempos%20Difíceis." 
-                          target="_blank"
-                          className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
-                        >
-                          Quero este treinamento
-                        </a>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Card 5 - Gerente de Sucesso */}
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">Gerente de Sucesso</h3>
-                        <p className="text-[#35DD48] font-medium mb-4 italic">Você não gerencia tarefas. Você lidera destinos.</p>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Temas Abordados:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Características do Gerente de Sucesso</li>
-                            <li>• Funções do Gerente de Vendas</li>
-                            <li>• Liderança Eficaz</li>
-                            <li>• Construção de Equipe Leal</li>
-                            <li>• Satisfação do Cliente</li>
-                          </ul>
-                        </div>
-                        <p className="text-gray-600 mb-6 text-sm">
-                          Formação de líderes estratégicos que inspiram, constroem lealdade e transformam resultados.
-                        </p>
-                        <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Gerente%20de%20Sucesso." 
-                          target="_blank"
-                          className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
-                        >
-                          Quero este treinamento
-                        </a>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Card 6 - O Jogo Completo das Vendas */}
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">O Jogo Completo das Vendas</h3>
-                        <p className="text-[#35DD48] font-medium mb-4 italic">Técnicas de abordagem, escuta ativa e negociação consultiva.</p>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Temas Abordados:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Fundamentos da Venda Moderna</li>
-                            <li>• Planejamento</li>
-                            <li>• Técnicas de Abordagem</li>
-                            <li>• Identificação de Necessidades</li>
-                            <li>• Negociação</li>
-                            <li>• Superando Objeções</li>
-                            <li>• Fechamento</li>
-                          </ul>
-                        </div>
-                        <p className="text-gray-600 mb-6 text-sm">
-                          Campo de batalha para transformar abordagens genéricas em vendas de impacto, com foco em margem e negociação estratégica.
-                        </p>
-                        <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20O%20Jogo%20Completo%20das%20Vendas." 
-                          target="_blank"
-                          className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
-                        >
-                          Quero este treinamento
-                        </a>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Card 7 - Passos para Alta Performance */}
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">Passos para Alta Performance</h3>
-                        <p className="text-[#35DD48] font-medium mb-4 italic">Todo gigante começou com o primeiro passo certo.</p>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Temas Abordados:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Fundamentos da Venda de Alta Performance</li>
-                            <li>• Prospecção</li>
-                            <li>• Processo Comercial</li>
-                            <li>• Pós-venda</li>
-                            <li>• Fidelização</li>
-                            <li>• Métricas</li>
-                          </ul>
-                        </div>
-                        <p className="text-gray-600 mb-6 text-sm">
-                          Passo a passo para SDRs, iniciantes e televendas dominarem técnica, processo e atitude.
-                        </p>
-                        <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Passos%20para%20Alta%20Performance." 
-                          target="_blank"
-                          className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
-                        >
-                          Quero este treinamento
-                        </a>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Card 8 - Gestão Comercial e Desenvolvimento de Equipes */}
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">Gestão Comercial e Desenvolvimento de Equipes</h3>
-                        <p className="text-[#35DD48] font-medium mb-4 italic">Contratação, KPIs e cultura de alta performance.</p>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Temas Abordados:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Montagem de time</li>
-                            <li>• Reuniões eficazes</li>
-                            <li>• Uso de KPIs</li>
-                            <li>• Integração de vendas</li>
-                            <li>• Cobrança e cultura</li>
-                          </ul>
-                        </div>
-                        <p className="text-gray-600 mb-6 text-sm">
-                          Estratégias práticas para formar e sustentar times comerciais de alta performance.
-                        </p>
-                        <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Gestão%20Comercial%20e%20Desenvolvimento%20de%20Equipes." 
-                          target="_blank"
-                          className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
-                        >
-                          Quero este treinamento
-                        </a>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Card 9 - Técnicas de Negociação e Poder de Persuasão */}
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">Técnicas de Negociação e Poder de Persuasão</h3>
-                        <p className="text-[#35DD48] font-medium mb-4 italic">Transforme objeções em oportunidades.</p>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Temas Abordados:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Negociação como jogo de influência ética</li>
-                            <li>• Cliente 5.0</li>
-                            <li>• IA como aliada</li>
-                            <li>• Persuasão e conversão</li>
-                            <li>• Encerramento irresistível</li>
-                          </ul>
-                        </div>
-                        <p className="text-gray-600 mb-6 text-sm">
-                          Combina fundamentos clássicos com IA, empatia e dados para negociação estratégica e encantamento do cliente.
-                        </p>
-                        <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Técnicas%20de%20Negociação%20e%20Poder%20de%20Persuasão." 
-                          target="_blank"
-                          className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
-                        >
-                          Quero este treinamento
-                        </a>
-                      </div>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Card 10 - Formação e Técnicas de Vendas para Televendas */}
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">Formação e Técnicas de Vendas para Televendas</h3>
-                        <p className="text-[#35DD48] font-medium mb-4 italic">Transforme seu televendas em máquina de fechar negócios.</p>
-                        <div className="mb-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Temas Abordados:</h4>
-                          <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Processo de Vendas por Telefone</li>
-                            <li>• Scripts práticos</li>
-                            <li>• Técnicas para objeções</li>
-                            <li>• Negociação por valor</li>
-                            <li>• Fechamento eficiente</li>
-                          </ul>
-                        </div>
-                        <p className="text-gray-600 mb-6 text-sm">
-                          Virada de chave para transformar ligações em conversões reais, com foco em performance e realidade brasileira.
-                        </p>
-                        <a 
-                          href="https://wa.me/5547996353818?text=Olá,%20tenho%20interesse%20no%20treinamento%20Formação%20e%20Técnicas%20de%20Vendas%20para%20Televendas." 
-                          target="_blank"
-                          className="w-full bg-[#35DD48] hover:bg-[#008440] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block text-center"
-                        >
-                          Quero este treinamento
-                        </a>
-                      </div>
-                    </div>
-                  </CarouselItem>
+                      </CarouselItem>
+                    );
+                  })}
                 </CarouselContent>
                 <CarouselPrevious className="left-2 bg-white border-2 border-[#35DD48] text-[#35DD48] hover:bg-[#35DD48] hover:text-white shadow-lg" />
                 <CarouselNext className="right-2 bg-white border-2 border-[#35DD48] text-[#35DD48] hover:bg-[#35DD48] hover:text-white shadow-lg" />
