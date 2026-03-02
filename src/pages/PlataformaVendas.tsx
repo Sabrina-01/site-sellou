@@ -395,16 +395,16 @@ const PlataformaVendas = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="py-16 lg:py-20 bg-[#35DD48]">
+      <section className="py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6">
               Pronto para escalar sua performance comercial?
             </h2>
-            <p className="text-xl text-white/95 mb-4 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-700 mb-4 max-w-2xl mx-auto">
               Transforme a rotina da sua equipe e conquiste previsibilidade com a Sellou.
             </p>
-            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
               A tecnologia foi feita para quem quer vender mais — com estratégia e simplicidade.
             </p>
             <a 
