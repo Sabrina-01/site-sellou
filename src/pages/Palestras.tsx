@@ -54,15 +54,11 @@ const Palestras = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Conteúdo que inspira. Estratégia que transforma.
+                Nossas Palestras
               </h2>
-              <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-4">
-                As palestras Sellou combinam experiência executiva, histórias reais e metodologias de performance comercial aplicadas no dia a dia de empresas e líderes.
+              <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+                As palestras Sellou transformam conhecimento em ação, combinando experiência executiva, histórias reais e metodologias de alta performance. Mais do que motivação, cada encontro entrega clareza e direção prática, conectando emoção e execução com uma linguagem moderna e inspiradora.
               </p>
-              <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-4">
-                Mais do que motivação, entregam clareza e direção prática para agir imediatamente.
-              </p>
-              <p className="text-lg text-gray-600 max-w-4xl mx-auto">Cada encontro é desenhado para conectar emoção e execução com linguagem moderna, direta e inspiradora.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
