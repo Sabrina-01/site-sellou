@@ -386,14 +386,14 @@ const TreinamentoEquipe = () => {
       <section className="py-16 bg-[#F5F5F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Desenvolva Pessoas e Transforme Resultados</h2>
-            <p className="text-xl text-gray-600 mb-8">Invista em treinamentos de impacto e colha performance excepcional</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Treinamentos que constroem performance, não só conhecimento.</h2>
+            <p className="text-xl text-gray-600 mb-8">Fale com nossos especialistas e descubra o formato ideal para o seu time.</p>
             <a 
               href="https://wa.me/5547996353818?text=Olá,%20quero%20saber%20mais%20sobre%20os%20treinamentos%20da%20Sellou." 
               target="_blank"
               className="bg-[#35DD48] hover:bg-[#008440] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-base lg:text-lg font-medium transform hover:scale-105 transition-all duration-300 inline-block"
             >
-              Solicitar Informações
+              Fale com a Sellou
             </a>
           </div>
         </div>
