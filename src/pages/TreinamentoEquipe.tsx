@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, CheckCircle, BookOpen, Trophy, MessageSquare, Target, Lightbulb, Clock, Users, GraduationCap, Award, Zap, Shield, Brain, BarChart3, Phone, type LucideIcon } from 'lucide-react';
+import { ArrowLeft, CheckCircle, BookOpen, Trophy, MessageSquare, Target, Lightbulb, Clock, Users, GraduationCap, Award, Zap, Shield, Brain, BarChart3, Phone, Gem, TrendingUp, Smartphone, type LucideIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
@@ -12,6 +12,17 @@ interface Treinamento {
 }
 
 const treinamentos: Treinamento[] = [
+  {
+    title: "Inovação em Vendas",
+    subtitle: "Desbloqueando o Potencial Criativo do seu Time.",
+    icon: Lightbulb,
+    detalhes: [
+      "Público-alvo: Equipes de vendas e lideranças",
+      "Formato: Workshop interativo",
+      "Objetivo: Estimular a criatividade e a aplicação de novas abordagens para superar desafios e inovar no processo de vendas."
+    ],
+    whatsapp: "Inovação%20em%20Vendas"
+  },
   {
     title: "Domínio Comercial",
     subtitle: "A Jornada do Representante Imparável.",
@@ -26,7 +37,7 @@ const treinamentos: Treinamento[] = [
   {
     title: "Líder Diamante",
     subtitle: "Forjados na pressão, lapidados pela excelência.",
-    icon: Award,
+    icon: Gem,
     detalhes: [
       "Público-alvo: Líderes e gestores",
       "Formato: Workshop",
@@ -37,9 +48,9 @@ const treinamentos: Treinamento[] = [
   {
     title: "A Mente do Líder Extraordinário",
     subtitle: "Liderança inspiradora, estratégica e exemplar.",
-    icon: Brain,
+    icon: Lightbulb,
     detalhes: [
-      "Público-alvo: Líderes e executivos",
+      "Público-alvo: Líderes e gestores",
       "Formato: Programa de desenvolvimento",
       "Objetivo: Modelo baseado em neurociência. Mais engajamento, equipes leais, cultura forte e decisões assertivas."
     ],
@@ -51,17 +62,17 @@ const treinamentos: Treinamento[] = [
     icon: Shield,
     detalhes: [
       "Público-alvo: CEOs, diretores e gerentes",
-      "Formato: Workshop intensivo",
-      "Objetivo: Preparar líderes para manter clareza, coragem e performance mesmo nos piores cenários."
+      "Formato: Workshop estratégico",
+      "Objetivo: Preparar CEOs, diretores e gerentes para manter clareza, coragem e performance mesmo nos piores cenários."
     ],
     whatsapp: "Liderança%20em%20Tempos%20Difíceis"
   },
   {
     title: "Gerente de Sucesso",
     subtitle: "Você não gerencia tarefas. Você lidera destinos.",
-    icon: Trophy,
+    icon: Users,
     detalhes: [
-      "Público-alvo: Gerentes comerciais",
+      "Público-alvo: Gerentes de vendas e líderes de equipe",
       "Formato: Treinamento prático",
       "Objetivo: Formação de líderes estratégicos que inspiram, constroem lealdade e transformam resultados."
     ],
@@ -70,10 +81,10 @@ const treinamentos: Treinamento[] = [
   {
     title: "O Jogo Completo das Vendas",
     subtitle: "Técnicas de abordagem, escuta ativa e negociação consultiva.",
-    icon: Target,
+    icon: MessageSquare,
     detalhes: [
-      "Público-alvo: Equipes de vendas",
-      "Formato: Workshop interativo",
+      "Público-alvo: Vendedores e equipes comerciais",
+      "Formato: Workshop intensivo",
       "Objetivo: Transformar abordagens genéricas em vendas de impacto, com foco em margem e negociação estratégica."
     ],
     whatsapp: "O%20Jogo%20Completo%20das%20Vendas"
@@ -81,21 +92,21 @@ const treinamentos: Treinamento[] = [
   {
     title: "Passos para Alta Performance",
     subtitle: "Todo gigante começou com o primeiro passo certo.",
-    icon: Zap,
+    icon: TrendingUp,
     detalhes: [
-      "Público-alvo: SDRs, iniciantes e televendas",
-      "Formato: Treinamento estruturado",
-      "Objetivo: Passo a passo para dominar técnica, processo e atitude em vendas."
+      "Público-alvo: SDRs, iniciantes em vendas e televendas",
+      "Formato: Treinamento fundamental",
+      "Objetivo: Dominar técnica, processo e atitude para alta performance em vendas."
     ],
     whatsapp: "Passos%20para%20Alta%20Performance"
   },
   {
     title: "Gestão Comercial e Desenvolvimento de Equipes",
     subtitle: "Contratação, KPIs e cultura de alta performance.",
-    icon: BarChart3,
+    icon: Users,
     detalhes: [
-      "Público-alvo: Gestores e líderes comerciais",
-      "Formato: Programa de capacitação",
+      "Público-alvo: Gestores comerciais e líderes de equipe",
+      "Formato: Programa de gestão",
       "Objetivo: Estratégias práticas para formar e sustentar times comerciais de alta performance."
     ],
     whatsapp: "Gestão%20Comercial%20e%20Desenvolvimento%20de%20Equipes"
@@ -103,22 +114,22 @@ const treinamentos: Treinamento[] = [
   {
     title: "Técnicas de Negociação e Poder de Persuasão",
     subtitle: "Transforme objeções em oportunidades.",
-    icon: MessageSquare,
+    icon: Target,
     detalhes: [
-      "Público-alvo: Vendedores e negociadores",
-      "Formato: Workshop prático",
-      "Objetivo: Combinar fundamentos clássicos com IA, empatia e dados para negociação estratégica."
+      "Público-alvo: Vendedores, negociadores e líderes",
+      "Formato: Workshop avançado",
+      "Objetivo: Combinar fundamentos clássicos com IA, empatia e dados para negociação estratégica e encantamento do cliente."
     ],
     whatsapp: "Técnicas%20de%20Negociação%20e%20Poder%20de%20Persuasão"
   },
   {
     title: "Formação e Técnicas de Vendas para Televendas",
     subtitle: "Transforme seu televendas em máquina de fechar negócios.",
-    icon: Phone,
+    icon: Smartphone,
     detalhes: [
-      "Público-alvo: Equipes de televendas",
-      "Formato: Treinamento intensivo",
-      "Objetivo: Virada de chave para transformar ligações em conversões reais, com foco em performance."
+      "Público-alvo: Equipes de televendas e SDRs",
+      "Formato: Treinamento especializado",
+      "Objetivo: Virada de chave para transformar ligações em conversões reais, com foco em performance e realidade brasileira."
     ],
     whatsapp: "Formação%20e%20Técnicas%20de%20Vendas%20para%20Televendas"
   }
@@ -318,7 +329,7 @@ const TreinamentoEquipe = () => {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">Nossos Treinamentos</h2>
             <div className="relative px-12">
-              <Carousel className="w-full">
+              <Carousel className="w-full" opts={{ loop: true }}>
                 <CarouselContent className="-ml-1">
                   {treinamentos.map((treinamento, index) => {
                     const Icon = treinamento.icon;
