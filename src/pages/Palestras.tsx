@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Lightbulb, Target, Users, TrendingUp, MessageCircle, Award, Clock, UserPlus, Zap, ArrowLeft } from 'lucide-react';
+import { Lightbulb, Target, Users, TrendingUp, MessageCircle, Award, Clock, UserPlus, Zap, ArrowLeft, Presentation } from 'lucide-react';
 const Palestras = () => {
   return <div className="min-h-screen bg-white">
       {/* Header */}
@@ -28,17 +28,20 @@ const Palestras = () => {
       <section className="relative overflow-hidden bg-gradient-to-br from-[#35DD48] to-[#008440] py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Link to="/" className="inline-flex items-center text-white hover:text-white/80 mb-4 lg:mb-6 transition-colors text-sm lg:text-base">
+            <Link to="/" className="inline-flex items-center text-white hover:text-white/80 mb-6 lg:mb-8 transition-colors text-sm lg:text-base">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Voltar para página inicial
             </Link>
+            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Presentation className="w-8 h-8 text-white" />
+            </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-              Palestras que despertam performance e propósito.
+              Palestras
             </h1>
             <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-              Experiências vivas de liderança, vendas e alta performance — inspirando times a agir com mais foco, clareza e resultado.
+              Experiências vivas de liderança, vendas e alta performance, inspirando times a agir com mais foco, clareza e resultado.
             </p>
-            <a href="https://wa.me/5547996353818?text=Olá,%20quero%20levar%20a%20Sellou%20para%20meu%20evento." target="_blank" className="inline-block bg-white text-[#008440] hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:shadow-lg">
+            <a href="https://wa.me/5547996353818?text=Olá,%20quero%20levar%20a%20Sellou%20para%20meu%20evento." target="_blank" className="inline-block bg-[#008440] hover:bg-[#006633] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:shadow-lg">
               Quero levar a Sellou para meu evento
             </a>
           </div>
