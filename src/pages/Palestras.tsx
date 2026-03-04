@@ -262,8 +262,8 @@ const Palestras = () => {
       <section className="py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#008440] mb-6">
-              Leve inspiração e resultado ao seu evento.
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              Transforme seu Evento
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
               Desperte o potencial do seu time com uma palestra que combina propósito, energia e execução.
