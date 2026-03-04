@@ -41,7 +41,7 @@ const Palestras = () => {
             <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
               Experiências vivas de liderança, vendas e alta performance, inspirando times a agir com mais foco, clareza e resultado.
             </p>
-            <a href="https://wa.me/5547996353818?text=Olá,%20quero%20levar%20a%20Sellou%20para%20meu%20evento." target="_blank" className="inline-block bg-[#008440] hover:bg-[#006633] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:shadow-lg">
+            <a href="https://wa.me/5547996353818?text=Olá,%20quero%20levar%20a%20Sellou%20para%20meu%20evento." target="_blank" className="inline-block bg-[#008440] hover:bg-[#006633] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:shadow-lg">
               Quero levar a Sellou para meu evento
             </a>
           </div>
